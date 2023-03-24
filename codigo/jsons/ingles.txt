@@ -1,0 +1,45 @@
+,
+        {
+            "nota": "APROBADA",
+            "creditos":3,
+            "nombre":"INGLES I",
+            "codigo":"1000044-M",
+            "tipologia":"nivelacion",
+            "semestre":1,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"no"
+        },
+        {
+            "nota": "APROBADA",
+            "creditos":3,
+            "nombre":"INGLES II",
+            "codigo":"1000045-M",
+            "tipologia":"nivelacion",
+            "semestre":1,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"no"
+        },
+        {
+            "nota": "APROBADA",
+            "creditos":3,
+            "nombre":"INGLES III",
+            "codigo":"1000046-M",
+            "tipologia":"nivelacion",
+            "semestre":1,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"no"
+        },
+        {
+          "nota": "APROBADA",
+          "creditos":3,
+          "nombre":"INGLES IV",
+          "codigo":"1000047-M",
+          "tipologia":"nivelacion",
+          "semestre":1,
+          "prerrequisitos":null,
+          "estado":"aprobada",
+          "afecta_promedio":"no"
+      }

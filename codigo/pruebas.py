@@ -55,3 +55,6 @@ for course in courses:
 # Render the graph to a file
 dot.render(directory='codigo/course_catalog', view=True)
 #'doctest-output/round-table.gv.pdf'
+
+
+
