@@ -1,0 +1,429 @@
+{
+    "asignaturas":[
+        {
+            "nota": 4.6,
+            "creditos": 3,
+            "nombre": "TECNCAS EN APRENDIZAJE ESTADISTICO",
+            "codigo": "3007854",
+            "tipologia": "disciplinar_optativa",
+            "semestre": 7,
+            "prerrequisitos": ["3010476"],
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.4,
+            "creditos": 3,
+            "nombre": "Calidad de software",
+            "codigo": "3010440",
+            "tipologia": "disciplinar_obligatoria",
+            "semestre": 7,
+            "prerrequisitos": ["3007852"],
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.4,
+            "creditos": 3,
+            "nombre": "Estructuracion y evaluacion de proyectos de ingenieria",
+            "codigo": "3010407",
+            "tipologia": "disciplinar_obligatoria",
+            "semestre": 7,
+            "prerrequisitos": ["3010408"],
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.8,
+            "creditos": 3,
+            "nombre": "REDES Y TELECOMUNICACIONES I",
+            "codigo": "3010440",
+            "tipologia": "disciplinar_obligatoria",
+            "semestre": 7,
+            "prerrequisitos": ["3007867"],
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.1,
+            "creditos": 4,
+            "nombre": "Introduccion a la teoria de la computacion",
+            "codigo": "3010393",
+            "tipologia": "libre_eleccion",
+            "semestre": 7,
+            "prerrequisitos": null,
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.3,
+            "creditos": 4,
+            "nombre": "Fundamentos de analisis",
+            "codigo": "3010389",
+            "tipologia": "libre_eleccion",
+            "semestre": 6,
+            "prerrequisitos": null,
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.8,
+            "creditos": 3,
+            "nombre": "ESTRUCTURA DE DATOS",
+            "codigo": "3007741",
+            "tipologia": "disciplinar_obligatoria",
+            "semestre": 6,
+            "prerrequisitos": ["3007744"],
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.3,
+            "creditos": 3,
+            "nombre": "INGENIERIA DE REQUISITOS",
+            "codigo": "3007852",
+            "tipologia": "disciplinar_obligatoria",
+            "semestre": 6,
+            "prerrequisitos": ["3007853"],
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.6,
+            "creditos": 3,
+            "nombre": "Introduccion a la inteligencia artificial",
+            "codigo": "3010476",
+            "tipologia": "disciplinar_obligatoria",
+            "semestre": 6,
+            "prerrequisitos": ["3010651", "3007847"],
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.4,
+            "creditos": 3,
+            "nombre": "SISTEMAS OPERATIVOS",
+            "codigo": "3007867",
+            "tipologia": "disciplinar_obligatoria",
+            "semestre": 6,
+            "prerrequisitos": ["3010426"],
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "ARQUITECTURA DE COMPUTADORES",
+            "codigo": "3007863",
+            "tipologia": "libre_eleccion",
+            "semestre": 5,
+            "prerrequisitos": null,
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.2,
+            "creditos": 3,
+            "nombre": "BASE DE DATOS I",
+            "codigo": "3007847",
+            "tipologia": "disciplinar_obligatoria",
+            "semestre": 5,
+            "prerrequisitos": ["3007741"],
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.7,
+            "creditos": 3,
+            "nombre": "Introduccion al analisis de decisiones",
+            "codigo": "3010415",
+            "tipologia": "disciplinar_obligatoria",
+            "semestre": 5,
+            "prerrequisitos": ["3007331"],
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "PROGRAMACION ORIENTADA A OBJETOS",
+            "codigo": "3007744",
+            "tipologia": "disciplinar_obligatoria",
+            "semestre": 5,
+            "prerrequisitos": ["3010435"],
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.8,
+            "creditos": 3,
+            "nombre": "SIMULACION DE SISTEMAS",
+            "codigo": "3007331",
+            "tipologia": "disciplinar_obligatoria",
+            "semestre": 5,
+            "prerrequisitos": ["3007324", "3010651"],
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.6,
+            "creditos": 4,
+            "nombre": "Fundamentos de matematicas discretas",
+            "codigo": "3010390",
+            "tipologia": "libre_eleccion",
+            "semestre": 5,
+            "prerrequisitos": null,
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.9,
+            "creditos": 4,
+            "nombre": "METODOS NUMERICOS",
+            "codigo": "3006907",
+            "tipologia": "fundamentacion_optativa",
+            "semestre": 4,
+            "prerrequisitos": ["1000003-M", "1000005-M"],
+            "estado": "aprobada",
+            "afecta_promedio": "si"
+          },
+          {
+            "nota": 4.9,
+            "creditos":3,
+            "nombre":"INGENIERIA DE SOFTWARE",
+            "codigo":"3007853",
+            "tipologia":"disciplinar_obligatoria",
+            "semestre":4,
+            "prerrequisitos":["3007744"],
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+
+          {
+            "nota": 4.9,
+            "creditos":3,
+            "nombre":"INVESTIGACION DE OPERACIONES I",
+            "codigo":"3007324",
+            "tipologia":"disciplinar_obligatoria",
+            "semestre":4,
+            "prerrequisitos":["1000003-M","3010435"],
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+
+          {
+            "nota": 4.6,
+            "creditos":3,
+            "nombre":"Teoria de lenguajes de programacion",
+            "codigo":"3010426",
+            "tipologia":"disciplinar_obligatoria",
+            "semestre":4,
+            "prerrequisitos":["3010435","3006906"],
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+
+          {
+            "nota": 4.9,
+            "creditos":4,
+            "nombre":"Fundamentos de matematicas",
+            "codigo":"3010651",
+            "tipologia":"libre_eleccion",
+            "semestre":4,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"no"
+        },
+
+
+
+          {
+            "nota": 4.0,
+            "creditos":3,
+            "nombre":"Estadistica",
+            "codigo":"3010651",
+            "tipologia":"fundamentacion_obligatoria",
+            "semestre":3,
+            "prerrequisitos":["1000005-M"],
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+
+          {
+            "nota": 4.4,
+            "creditos":4,
+            "nombre":"CALCULO EN VARIAS VARIABLES",
+            "codigo":"1000006-M",
+            "tipologia":"fundamentacion_obligatoria",
+            "semestre":3,
+            "prerrequisitos":["1000005-M"],
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+
+          {
+            "nota": 4.5,
+            "creditos":4,
+            "nombre":"ECUACIONES DIFERENCIALES",
+            "codigo":"1000007-M",
+            "tipologia":"fundamentacion_optativa",
+            "semestre":3,
+            "prerrequisitos":["1000003-M","1000005-M"],
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+
+
+          {
+            "nota": 5,
+            "creditos":3,
+            "nombre":"Fundamentos de programacion",
+            "codigo":"3010435",
+            "tipologia":"disciplinar_obligatoria",
+            "semestre":3,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+
+          {
+            "nota": 4.8,
+            "creditos":3,
+            "nombre":"Fundamentos de proyectos en ingenieria",
+            "codigo":"3010408",
+            "tipologia":"disciplinar_obligatoria",
+            "semestre":3,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+
+          
+          {
+            "nota": 4.4,
+            "creditos":4,
+            "nombre":"ALGEBRA LINEAL",
+            "codigo":"1000003-M",
+            "tipologia":"fundamentacion_obligatoria",
+            "semestre":2,
+            "prerrequisitos":["1000008-M"],
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+
+          {
+            "nota": 4.5,
+            "creditos":4,
+            "nombre":"CALCULO INTEGRAL",
+            "codigo":"1000005-M",
+            "tipologia":"fundamentacion_obligatoria",
+            "semestre":2,
+            "prerrequisitos":["1000004-M"],
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+
+          {
+            "nota": 4.7,
+            "creditos":4,
+            "nombre":"FISICA MECANICA",
+            "codigo":"1000019-M",
+            "tipologia":"fundamentacion_obligatoria",
+            "semestre":2,
+            "prerrequisitos":["1000004-M","1000008-M"],
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+          
+          {
+            "nota": 4.6,
+            "creditos":4,
+            "nombre":"MATEMATICAS DISCRETAS",
+            "codigo":"3006906",
+            "tipologia":"fundamentacion_obligatoria",
+            "semestre":2,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+          
+          {
+            "nota": 4.5,
+            "creditos":4,
+            "nombre":"CALCULO DIFERENCIAL",
+            "codigo":"1000004-M",
+            "tipologia":"fundamentacion_obligatoria",
+            "semestre":1,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+        {
+            "nota": 4.2,
+            "creditos":4,
+            "nombre":"GEOMETRIA VECTORIAL Y ANALITICA",
+            "codigo":"1000008-M",
+            "tipologia":"fundamentacion_obligatoria",
+            "semestre":1,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+        {
+            "nota": 4.6,
+            "creditos":2,
+            "nombre":"Introduccion a la ingenieria de sistemas e informática",
+            "codigo":"",
+            "tipologia":"disciplinar_obligatoria",
+            "semestre":1,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+          {
+            "nota": "APROBADA",
+            "creditos":2,
+            "nombre":"Catedra Nacional de Induccion y Preparacion para la Vida Universitaria",
+            "codigo":"",
+            "tipologia":"libre_eleccion",
+            "semestre":1,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"si"
+        },
+
+        {
+            "nota": "APROBADA",
+            "creditos":3,
+            "nombre":"INGLES I",
+            "codigo":"1000044-M",
+            "tipologia":"nivelacion",
+            "semestre":1,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"no"
+        },
+        {
+            "nota": "APROBADA",
+            "creditos":3,
+            "nombre":"INGLES II",
+            "codigo":"1000045-M",
+            "tipologia":"nivelacion",
+            "semestre":1,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"no"
+        },
+        {
+            "nota": "APROBADA",
+            "creditos":3,
+            "nombre":"INGLES III",
+            "codigo":"1000046-M",
+            "tipologia":"nivelacion",
+            "semestre":1,
+            "prerrequisitos":null,
+            "estado":"aprobada",
+            "afecta_promedio":"no"
+        }
+    ]
+}

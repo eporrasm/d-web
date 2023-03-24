@@ -1,0 +1,208 @@
+// Course Catalog
+digraph {
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		label="semestre 1"
+		"1000004-M" [label="1000004-M
+CALCULO DIFERENCIAL
+4 créditos
+4.5" fillcolor="#FFC0CB" shape=box style=filled]
+		"1000008-M" [label="1000008-M
+GEOMETRIA VECTORIAL Y ANALITICA
+4 créditos
+4.2" fillcolor="#FFC0CB" shape=box style=filled]
+		"" [label="
+Introduccion a la ingenieria de sistemas e informÃ¡tica
+2 créditos
+4.6" fillcolor="#87CEFA" shape=box style=filled]
+		"" [label="
+Catedra Nacional de Induccion y Preparacion para la Vida Universitaria
+2 créditos
+APROBADA" fillcolor="#98FB98" shape=box style=filled]
+		"1000044-M" [label="1000044-M
+INGLES I
+3 créditos
+APROBADA" fillcolor="#EBEBEB" shape=box style=filled]
+		"1000045-M" [label="1000045-M
+INGLES II
+3 créditos
+APROBADA" fillcolor="#EBEBEB" shape=box style=filled]
+		"1000046-M" [label="1000046-M
+INGLES III
+3 créditos
+APROBADA" fillcolor="#EBEBEB" shape=box style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		label="semestre 2"
+		"1000003-M" [label="1000003-M
+ALGEBRA LINEAL
+4 créditos
+4.4" fillcolor="#FFC0CB" shape=box style=filled]
+		"1000005-M" [label="1000005-M
+CALCULO INTEGRAL
+4 créditos
+4.5" fillcolor="#FFC0CB" shape=box style=filled]
+		"1000019-M" [label="1000019-M
+FISICA MECANICA
+4 créditos
+4.7" fillcolor="#FFC0CB" shape=box style=filled]
+		3006906 [label="3006906
+MATEMATICAS DISCRETAS
+4 créditos
+4.6" fillcolor="#FFC0CB" shape=box style=filled]
+	}
+	subgraph cluster_3 {
+		color=lightgrey style=filled
+		label="semestre 3"
+		3010651 [label="3010651
+Estadistica
+3 créditos
+4.0" fillcolor="#FFC0CB" shape=box style=filled]
+		"1000006-M" [label="1000006-M
+CALCULO EN VARIAS VARIABLES
+4 créditos
+4.4" fillcolor="#FFC0CB" shape=box style=filled]
+		"1000007-M" [label="1000007-M
+ECUACIONES DIFERENCIALES
+4 créditos
+4.5" fillcolor="#FFC0CB" shape=box style=filled]
+		3010435 [label="3010435
+Fundamentos de programacion
+3 créditos
+5" fillcolor="#87CEFA" shape=box style=filled]
+		3010408 [label="3010408
+Fundamentos de proyectos en ingenieria
+3 créditos
+4.8" fillcolor="#87CEFA" shape=box style=filled]
+	}
+	subgraph cluster_4 {
+		color=lightgrey style=filled
+		label="semestre 4"
+		3006907 [label="3006907
+METODOS NUMERICOS
+4 créditos
+4.9" fillcolor="#FFC0CB" shape=box style=filled]
+		3007853 [label="3007853
+INGENIERIA DE SOFTWARE
+3 créditos
+4.9" fillcolor="#87CEFA" shape=box style=filled]
+		3007324 [label="3007324
+INVESTIGACION DE OPERACIONES I
+3 créditos
+4.9" fillcolor="#87CEFA" shape=box style=filled]
+		3010426 [label="3010426
+Teoria de lenguajes de programacion
+3 créditos
+4.6" fillcolor="#87CEFA" shape=box style=filled]
+		3010651 [label="3010651
+Fundamentos de matematicas
+4 créditos
+4.9" fillcolor="#98FB98" shape=box style=filled]
+	}
+	subgraph cluster_5 {
+		color=lightgrey style=filled
+		label="semestre 5"
+		3007863 [label="3007863
+ARQUITECTURA DE COMPUTADORES
+3 créditos
+5.0" fillcolor="#98FB98" shape=box style=filled]
+		3007847 [label="3007847
+BASE DE DATOS I
+3 créditos
+4.2" fillcolor="#87CEFA" shape=box style=filled]
+		3010415 [label="3010415
+Introduccion al analisis de decisiones
+3 créditos
+4.7" fillcolor="#87CEFA" shape=box style=filled]
+		3007744 [label="3007744
+PROGRAMACION ORIENTADA A OBJETOS
+3 créditos
+5.0" fillcolor="#87CEFA" shape=box style=filled]
+		3007331 [label="3007331
+SIMULACION DE SISTEMAS
+3 créditos
+4.8" fillcolor="#87CEFA" shape=box style=filled]
+		3010390 [label="3010390
+Fundamentos de matematicas discretas
+4 créditos
+4.6" fillcolor="#98FB98" shape=box style=filled]
+	}
+	subgraph cluster_6 {
+		color=lightgrey style=filled
+		label="semestre 6"
+		3010389 [label="3010389
+Fundamentos de analisis
+4 créditos
+4.3" fillcolor="#98FB98" shape=box style=filled]
+		3007741 [label="3007741
+ESTRUCTURA DE DATOS
+3 créditos
+4.8" fillcolor="#87CEFA" shape=box style=filled]
+		3007852 [label="3007852
+INGENIERIA DE REQUISITOS
+3 créditos
+4.3" fillcolor="#87CEFA" shape=box style=filled]
+		3010476 [label="3010476
+Introduccion a la inteligencia artificial
+3 créditos
+4.6" fillcolor="#87CEFA" shape=box style=filled]
+		3007867 [label="3007867
+SISTEMAS OPERATIVOS
+3 créditos
+4.4" fillcolor="#87CEFA" shape=box style=filled]
+	}
+	subgraph cluster_7 {
+		color=lightgrey style=filled
+		label="semestre 7"
+		3007854 [label="3007854
+TECNCAS EN APRENDIZAJE ESTADISTICO
+3 créditos
+4.6" fillcolor="#87CEFA" shape=box style=filled]
+		3010440 [label="3010440
+Calidad de software
+3 créditos
+4.4" fillcolor="#87CEFA" shape=box style=filled]
+		3010407 [label="3010407
+Estructuracion y evaluacion de proyectos de ingenieria
+3 créditos
+4.4" fillcolor="#87CEFA" shape=box style=filled]
+		3010440 [label="3010440
+REDES Y TELECOMUNICACIONES I
+3 créditos
+4.8" fillcolor="#87CEFA" shape=box style=filled]
+		3010393 [label="3010393
+Introduccion a la teoria de la computacion
+4 créditos
+4.1" fillcolor="#98FB98" shape=box style=filled]
+	}
+	3010476 -> 3007854 [arrowhead=vee]
+	3007852 -> 3010440 [arrowhead=vee]
+	3010408 -> 3010407 [arrowhead=vee]
+	3007867 -> 3010440 [arrowhead=vee]
+	3007744 -> 3007741 [arrowhead=vee]
+	3007853 -> 3007852 [arrowhead=vee]
+	3010651 -> 3010476 [arrowhead=vee]
+	3007847 -> 3010476 [arrowhead=vee]
+	3010426 -> 3007867 [arrowhead=vee]
+	3007741 -> 3007847 [arrowhead=vee]
+	3007331 -> 3010415 [arrowhead=vee]
+	3010435 -> 3007744 [arrowhead=vee]
+	3007324 -> 3007331 [arrowhead=vee]
+	3010651 -> 3007331 [arrowhead=vee]
+	"1000003-M" -> 3006907 [arrowhead=vee]
+	"1000005-M" -> 3006907 [arrowhead=vee]
+	3007744 -> 3007853 [arrowhead=vee]
+	"1000003-M" -> 3007324 [arrowhead=vee]
+	3010435 -> 3007324 [arrowhead=vee]
+	3010435 -> 3010426 [arrowhead=vee]
+	3006906 -> 3010426 [arrowhead=vee]
+	"1000005-M" -> 3010651 [arrowhead=vee]
+	"1000005-M" -> "1000006-M" [arrowhead=vee]
+	"1000003-M" -> "1000007-M" [arrowhead=vee]
+	"1000005-M" -> "1000007-M" [arrowhead=vee]
+	"1000008-M" -> "1000003-M" [arrowhead=vee]
+	"1000004-M" -> "1000005-M" [arrowhead=vee]
+	"1000004-M" -> "1000019-M" [arrowhead=vee]
+	"1000008-M" -> "1000019-M" [arrowhead=vee]
+}
