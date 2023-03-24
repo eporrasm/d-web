@@ -10,7 +10,7 @@ asignaturas = data["asignaturas"]
 
 
 # Initialize the graph
-dot = Digraph(comment='Course Catalog', format='png')
+dot = Digraph(comment='Course Catalog', format='png',graph_attr={'compound':'true'})
 
 # Define the color schemes
 color_map = {
@@ -37,20 +37,32 @@ for course in courses:
      if course['semestre'] > maxsem:
          maxsem = course['semestre']
 
-#print(maxsem)s
+#dot.node('start',shape='Mdiamond')
 
 for i in range(1,maxsem+1):
 
     with dot.subgraph(name=f'cluster_{i}') as sem:
-        sem.attr(style='filled', color='lightgrey')
-        sem.attr(label=f"semestre {i}")
+
+        sem.attr(style='filled', color='lightgrey', rank='same')
+        sem.attr(label=f"Semestre {i}")
+
+        sem.node_attr['style'] = 'filled'
+        sem.node_attr['shape'] = 'box'
         
         for course in courses:
             if course['semestre'] == i:
-                node_label = f'{course["codigo"]}\n{course["nombre"]}\n{course["creditos"]} créditos\n{course["nota"]}'
-                node_shape = 'box'
-                node_style = "filled"
-                sem.node(course["codigo"], label=node_label, shape=node_shape, style=node_style, fillcolor=color_map[course["tipologia"]])
+
+                node_label = '{}\n{}\n{} créditos\n{}'.format(
+                                                              course["codigo"],
+                                                              course["nombre"],
+                                                              course["creditos"],
+                                                              course["nota"]
+                                                              )
+                    
+                sem.node(name=course["codigo"], 
+                         label=node_label, 
+                         fillcolor=color_map[course["tipologia"]]
+                        )
 
 # Add edges for prerequisite courses
 for course in courses:
@@ -58,13 +70,8 @@ for course in courses:
         for prereq in course["prerrequisitos"]:
             dot.edge(prereq, course["codigo"], arrowhead='vee')
 
-# # Add a label for each semester
-# for i in range(1, 11):
-#     dot.node(f'sem{i}', label=f'Semestre {i}', shape='plaintext')
-
-# # Add edges to group courses by semester
-# for course in courses:
-#     dot.edge(f'sem{course["semestre"]}', course["codigo"], style='invis')
+# for j in range(1,maxsem+1):
+#     dot.edge('start', f'cluster_{j}', lhead=f'cluster_{j}')
 
 # Render the graph to a file
 dot.render(directory='codigo/course_catalog', view=True)
