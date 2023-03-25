@@ -11,7 +11,9 @@ asignaturas = datos["asignaturas"]
 
 
 # Inicializando el grafo
-dot = Digraph(comment='Historia academica', format='png',graph_attr={'compound':'true'})
+dot = Digraph(comment='Historia academica', format='png',graph_attr={'compound':'true', 
+                                                                     'splines':'ortho', 
+                                                                     })
 
 
 # Definimos los esquemas de colores

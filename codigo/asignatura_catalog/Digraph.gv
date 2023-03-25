@@ -1,6 +1,6 @@
 // Historia academica
 digraph {
-	graph [compound=true]
+	graph [compound=true margin=0.5 splines=ortho]
 	subgraph cluster_1 {
 		node [shape=box style=filled width=3]
 		color=lightgrey fontname=Arial style=filled
