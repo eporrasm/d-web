@@ -52,7 +52,8 @@ PAPA = [0,0]
 # Agregamos un nodo por cada asignatura
 for i in range(1,maxsem+1):
 
-    with dot.subgraph(name=f'cluster_{i}') as sem:
+    with dot.subgraph(name=f'cluster_{i}',
+                      graph_attr={'margin':'25'}) as sem:
 
         sem.attr(fontname="Arial",
                  style='filled',
@@ -68,7 +69,9 @@ for i in range(1,maxsem+1):
         sem.node_attr['width'] = '3'
 
         #Nodo para hacer invisible
-        sem.node(name=f'sem_{i}',label=f'sem_{i}',style='invis')
+        sem.node(name=f'sem_{i}',
+                 label=f'sem_{i}',
+                 style='invis')
         
         asignatura_prev = f'sem_{i}'
         asignatura_por_semestre = list()
