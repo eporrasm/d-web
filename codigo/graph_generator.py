@@ -8,6 +8,9 @@ with open('codigo/jsons/asignaturasEmilio.json') as json_file:
 
 
 asignaturas = datos["asignaturas"]
+asignaturas.sort(key= lambda asig: (
+                                    #len(asig['prerrequisitos']) if asig['prerrequisitos'] != None else 0, 
+                                    asig['codigo'] ))
 
 
 # Inicializando el grafo
@@ -40,6 +43,7 @@ node_styles = {
 #Encontramos el último semestre cursado por el alumno
 
 maxsem = 0
+
 
 for asignatura in asignaturas:
      if asignatura['semestre'] > maxsem:
