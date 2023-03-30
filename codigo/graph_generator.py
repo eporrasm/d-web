@@ -3,7 +3,10 @@ import textwrap
 import json
 
 # Abriendo archivo json
-with open('codigo/jsons/asignaturasEmilio.json') as json_file:
+with open(
+    #'codigo/jsons/asignaturasEmilio.json'
+    'codigo/jsons/asignaturasNel.json'
+    ) as json_file:
     datos = json.load(json_file)
 
 
