@@ -17,9 +17,9 @@
         "nombre": "Estadistica III",
         "codigo": "3009137",
         "tipologia": "fundamentacion_optativa",
-        "semestre": 7,
+        "semestre": 6,
         "prerrequisitos": ["3006915"],
-        "estado": "aprobada",
+        "estado": "no_aprobada",
         "afecta_promedio": "si"
       },
       {
@@ -28,7 +28,7 @@
         "nombre": "Antiguo oriente una historia conectada",
         "codigo": "3010612",
         "tipologia": "libre_eleccion",
-        "semestre": 7,
+        "semestre": 6,
         "prerrequisitos": null,
         "estado": "aprobada",
         "afecta_promedio": "si"
@@ -39,7 +39,7 @@
         "nombre": "PROGRAMACION ORIENTADA A OBJETOS",
         "codigo": "3007744",
         "tipologia": "disciplinar_obligatoria",
-        "semestre": 7,
+        "semestre": 6,
         "prerrequisitos": ["3010435"],
         "estado": "aprobada",
         "afecta_promedio": "si"
@@ -61,18 +61,18 @@
         "nombre":"CALCULO EN VARIAS VARIABLES",
         "codigo":"1000006-M",
         "tipologia":"fundamentacion_optativa",
-        "semestre":3,
+        "semestre": 3,
         "prerrequisitos":["1000005-M"],
         "estado":"cancelada",
         "afecta_promedio":"si"
     },
       {
         "nota": null,
-        "creditos":4,
+        "creditos": 4,
         "nombre":"ECUACIONES DIFERENCIALES",
         "codigo":"1000007-M",
         "tipologia":"fundamentacion_optativa",
-        "semestre":3,
+        "semestre": 3,
         "prerrequisitos":["1000003-M","1000005-M"],
         "estado":"cancelada",
         "afecta_promedio":"si"
@@ -83,7 +83,7 @@
         "nombre":"CALCULO EN VARIAS VARIABLES",
         "codigo":"1000006-M",
         "tipologia":"fundamentacion_optativa",
-        "semestre":4,
+        "semestre": 4,
         "prerrequisitos":["1000005-M"],
         "estado":"cancelada",
         "afecta_promedio":"si"
@@ -91,22 +91,22 @@
 
       {
         "nota": 3.8,
-        "creditos":3,
+        "creditos": 3,
         "nombre":"Fundamentos de programacion",
         "codigo":"3010435",
         "tipologia":"disciplinar_obligatoria",
-        "semestre":5,
+        "semestre": 5,
         "prerrequisitos":null,
         "estado":"aprobada",
         "afecta_promedio":"si"
     },
     {
       "nota": null,
-      "creditos":3,
+      "creditos": 3,
       "nombre":"Fundamentos de programacion",
       "codigo":"3010435",
       "tipologia":"disciplinar_obligatoria",
-      "semestre":4,
+      "semestre": 3,
       "prerrequisitos":null,
       "estado":"cancelada",
       "afecta_promedio":"si"
@@ -130,7 +130,7 @@
         "nombre":"ALGEBRA LINEAL",
         "codigo":"1000003-M",
         "tipologia":"fundamentacion_obligatoria",
-        "semestre":3,
+        "semestre": 3,
         "prerrequisitos":["1000008-M"],
         "estado":"aprobada",
         "afecta_promedio":"si"
@@ -154,7 +154,7 @@
         "nombre":"FISICA MECANICA",
         "codigo":"1000019-M",
         "tipologia":"fundamentacion_obligatoria",
-        "semestre":4,
+        "semestre": 4,
         "prerrequisitos":["1000004-M","1000008-M"],
         "estado":"aprobada",
         "afecta_promedio":"si"
@@ -215,6 +215,28 @@
         "prerrequisitos":null,
         "estado":"aprobada",
         "afecta_promedio":"si"
-    }
+    },
+    {
+      "nota": 4.2,
+      "creditos":2,
+      "nombre":"Catedra Ingenierias Facultad de Minas",
+      "codigo":"3009511",
+      "tipologia":"libre_eleccion",
+      "semestre":1,
+      "prerrequisitos":null,
+      "estado":"aprobada",
+      "afecta_promedio":"si"
+  },
+  {
+    "nota": 4.1,
+    "creditos":4,
+    "nombre":"ESTADISTICA DESCRIPTIVA Y EXPLORATORIA",
+    "codigo":"3006927",
+    "tipologia":"fundamentacion_optativa",
+    "semestre": 3,
+    "prerrequisitos":["3010651"],
+    "estado":"aprobada",
+    "afecta_promedio":"si"
+}
   ]
 }

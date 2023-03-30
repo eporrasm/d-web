@@ -4,16 +4,16 @@ import json
 
 # Abriendo archivo json
 with open(
-    #'codigo/jsons/asignaturasEmilio.json'
-    'codigo/jsons/asignaturasNel.json'
+    'codigo/jsons/asignaturasEmilio.json'
+    #'codigo/jsons/asignaturasNel.json'
     ) as json_file:
     datos = json.load(json_file)
 
 
 asignaturas = datos["asignaturas"]
 asignaturas.sort(key= lambda asig: (
-                                    #len(asig['prerrequisitos']) if asig['prerrequisitos'] != None else 0, 
-                                    asig['codigo'] ))
+                                    #-len(asig['prerrequisitos']) if asig['prerrequisitos'] != None else 0, 
+                                    asig['semestre'] ))
 
 
 # Inicializando el grafo
@@ -36,13 +36,6 @@ colores_por_tipologia = {
     'nivelacion': "#EBEBEB", 
 }
 
-# Define the node styles
-node_styles = {
-    'aprobada': 'style="filled", fillcolor="#98FB98"',
-    'cancelada': 'style="filled", fillcolor="#FFFFE0"',
-    'no_aprobada': 'style="filled", fillcolor="#FFB6C1"'
-}
-
 #Encontramos el último semestre cursado por el alumno
 
 maxsem = 0
@@ -54,7 +47,7 @@ for asignatura in asignaturas:
 
 
 #Se crea una lista para llevar control del PAPA. El primer valor
-        #guardará el peso de la nota y la segunda los créditos
+#guardará el peso de la nota y la segunda los créditos
 PAPA = [0,0]
 # Agregamos un nodo por cada asignatura
 for i in range(1,maxsem+1):
@@ -102,22 +95,37 @@ for i in range(1,maxsem+1):
                                                               asignatura["codigo"],
                                                               nombre_wrappeado,
                                                               asignatura["creditos"],
-                                                              asignatura["nota"]
+                                                              asignatura["nota"] if asignatura["nota"] != None else 0
                                                               )
                 
+
+                if asignatura['estado'] == 'cancelada':
+                    identificador = f'{asignatura["codigo"]}_c{i}'
+                    color = '#ff0000'
+
+                elif asignatura['estado'] == 'no_aprobada':
+                    identificador = f'{asignatura["codigo"]}_na{i}'
+                    color = '#ff0000'
+
+                else:
+                    identificador = asignatura["codigo"]
+                    color = '#000000'
+
+
                 # Se crea el nodo de cada asignatura dentro de su respectivo cluster (semestre)
-                sem.node(name=asignatura["codigo"], 
-                         label=node_label, 
-                         fillcolor=colores_por_tipologia[asignatura["tipologia"]],
-                         group = f'sem{i}'
-                        )
-                
+                sem.node(name=identificador, 
+                        label=node_label,
+                        color=color, 
+                        fillcolor=colores_por_tipologia[asignatura["tipologia"]],
+                        group = f'sem{i}'
+                    )
+            
                 #Edges invisibles para las materias queden unas debajo de otras
-                sem.edge(asignatura_prev, 
-                         asignatura["codigo"], 
-                         style='invis')
-                
-                asignatura_prev = asignatura["codigo"]
+                sem.edge(tail_name=asignatura_prev, 
+                        head_name=identificador, 
+                        style='invis')
+            
+                asignatura_prev = identificador
         
         
 
@@ -154,7 +162,7 @@ for i in range(1,maxsem+1):
         
 # Agregamos las flechas de prerequisitos
 for asignatura in asignaturas:
-    if asignatura["prerrequisitos"]:
+    if asignatura["prerrequisitos"] and asignatura['estado'] == 'aprobada':
         for prereq in asignatura["prerrequisitos"]:
             dot.edge(prereq,
                     asignatura["codigo"],
