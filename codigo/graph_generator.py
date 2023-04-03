@@ -4,8 +4,8 @@ import json
 
 # Abriendo archivo json
 with open(
-    #'codigo/jsons/asignaturasEmilio.json'
-    'codigo/jsons/asignaturasNel.json'
+    'codigo/jsons/asignaturasEmilio.json'
+    #'codigo/jsons/asignaturasNel.json'
     ) as json_file:
     datos = json.load(json_file)
 
@@ -18,20 +18,20 @@ asignaturas.sort(key= lambda asig: (
 
 # Inicializando el grafo
 dot = Digraph(comment='Historia academica', format='png',graph_attr={'compound':'true', 
-                                                                     'splines':'ortho', 
+                                                                     'splines':'ortho',
                                                                      })
 
 
 # Definimos los esquemas de colores
 colores_por_tipologia = {
-    # Rosado para Fundamentación
-    'fundamentacion_optativa': "#FFC0CB", 
-    'fundamentacion_obligatoria': "#FFC0CB",
-    # Azul para disciplinares
-    'disciplinar_obligatoria': "#87CEFA",
-    'disciplinar_optativa': "#87CEFA",  
-    # Verde para libre elección
-    'libre_eleccion': "#98FB98", 
+    # Morado para Fundamentación
+    'fundamentacion_optativa': "#9f86c0", 
+    'fundamentacion_obligatoria': "#9f86c0",
+    # Verde para disciplinares
+    'disciplinar_obligatoria': "#52b788",
+    'disciplinar_optativa': "#52b788",  
+    # Amarillo para libre elección
+    'libre_eleccion': "#ffca3a", 
     # Gris para nivelación
     'nivelacion': "#EBEBEB", 
 }
@@ -53,25 +53,27 @@ PAPA = [0,0]
 for i in range(1,maxsem+1):
 
     with dot.subgraph(name=f'cluster_{i}',
-                      graph_attr={'margin':'25'}) as sem:
+                      graph_attr={'margin':'25','nodesep':'0.02'}) as sem:
 
         sem.attr(fontname="Arial",
                  style='filled',
-                 color='lightgrey'
+                 fillcolor='lightGray',
+                 color='darkgray'
         )
 
         sem.attr(label=f"Semestre {i}")
+
+        #Nodo para hacer invisible
+        dot.node(name=f'sem_{i}',
+                width='0.02',
+                height='0.02',
+                style='invis')
         
         
         sem.node_attr['style'] = 'filled'
         sem.node_attr['shape'] = 'box'
         # sem.node_attr['fixedsize'] = 'true'
         sem.node_attr['width'] = '3'
-
-        #Nodo para hacer invisible
-        sem.node(name=f'sem_{i}',
-                 label=f'sem_{i}',
-                 style='invis')
         
         asignatura_prev = f'sem_{i}'
         asignatura_por_semestre = list()
@@ -80,8 +82,26 @@ for i in range(1,maxsem+1):
         for asignatura in asignaturas:
             if asignatura['semestre'] == i:
                 asignatura_por_semestre.append(asignatura)
-
                 
+
+                if asignatura['estado'] == 'cancelada':
+                    identificador = f'{asignatura["codigo"]}_c{i}'
+                    color = '#e36414'
+                    nota = "CANCELADA"
+                    penwidth = '2'
+
+                elif asignatura['estado'] == 'no_aprobada':
+                    identificador = f'{asignatura["codigo"]}_na{i}'
+                    color = '#ff0000'
+                    nota = asignatura['nota'] if asignatura['nota'] != None else "NO APROBADA"
+                    penwidth = '2'
+
+                else:
+                    identificador = asignatura["codigo"]
+                    color = '#000000'
+                    nota = asignatura['nota'] if asignatura['nota'] != None else "APROBADA"
+                    penwidth = '1'
+
 
                 #Primero wrapeamos el texto del nombre
 
@@ -95,29 +115,16 @@ for i in range(1,maxsem+1):
                                                               asignatura["codigo"],
                                                               nombre_wrappeado,
                                                               asignatura["creditos"],
-                                                              asignatura["nota"] if asignatura["nota"] != None else "-"
+                                                              nota
                                                               )
-                
-
-                if asignatura['estado'] == 'cancelada':
-                    identificador = f'{asignatura["codigo"]}_c{i}'
-                    color = '#ff0000'
-
-                elif asignatura['estado'] == 'no_aprobada':
-                    identificador = f'{asignatura["codigo"]}_na{i}'
-                    color = '#ff0000'
-
-                else:
-                    identificador = asignatura["codigo"]
-                    color = '#000000'
-
 
                 # Se crea el nodo de cada asignatura dentro de su respectivo cluster (semestre)
                 sem.node(name=identificador, 
                         label=node_label,
                         color=color, 
                         fillcolor=colores_por_tipologia[asignatura["tipologia"]],
-                        group = f'sem{i}'
+                        group = f'sem{i}',
+                        penwidth=penwidth
                     )
             
                 #Edges invisibles para las materias queden unas debajo de otras
@@ -173,6 +180,7 @@ for j in range(1,maxsem+1):
      dot.edge('start', f'sem_{j}', lhead=f'cluster_{j}',style='invis')
 
 dot.node('start',shape='Mdiamond', style='invis')
+
 
 # Render the graph to a file
 dot.render(directory='codigo/asignatura_catalog', view=True)
