@@ -4,8 +4,8 @@ import json
 
 # Abriendo archivo json
 with open(
-    'codigo/jsons/asignaturasEmilio.json'
-    #'codigo/jsons/asignaturasNel.json'
+    #'codigo/jsons/asignaturasEmilio.json'
+    'codigo/jsons/asignaturasNel.json'
     ) as json_file:
     datos = json.load(json_file)
 
@@ -95,7 +95,7 @@ for i in range(1,maxsem+1):
                                                               asignatura["codigo"],
                                                               nombre_wrappeado,
                                                               asignatura["creditos"],
-                                                              asignatura["nota"] if asignatura["nota"] != None else 0
+                                                              asignatura["nota"] if asignatura["nota"] != None else "-"
                                                               )
                 
 
