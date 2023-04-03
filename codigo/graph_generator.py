@@ -135,7 +135,7 @@ for i in range(1,maxsem+1):
  
         for asignatura in asignatura_por_semestre:
             # Se revisa que la materia afecte el promedio o si fue cancelada
-            if asignatura["afecta_promedio"] == "si" or asignatura["estado"] == 'cancelada':
+            if asignatura["nota"] != None or asignatura["estado"] == 'cancelada':
                 #Si se está calculando el PAPPI, se deben de tener en cuenta los créditos cancelados
                 if asignatura["estado"] == 'cancelada':
                     PAPPI[1] += asignatura["creditos"]

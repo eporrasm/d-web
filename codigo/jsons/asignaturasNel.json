@@ -8,8 +8,7 @@
         "tipologia": "fundamentacion_optativa",
         "semestre": 5,
         "prerrequisitos": ["3010651"],
-        "estado": "aprobada",
-        "afecta_promedio": "si"
+        "estado": "aprobada"
       },
       {
         "nota": 1.5,
@@ -19,8 +18,7 @@
         "tipologia": "fundamentacion_optativa",
         "semestre": 6,
         "prerrequisitos": ["3006915"],
-        "estado": "no_aprobada",
-        "afecta_promedio": "si"
+        "estado": "no_aprobada"
       },
       {
         "nota": 3.8,
@@ -30,8 +28,7 @@
         "tipologia": "libre_eleccion",
         "semestre": 6,
         "prerrequisitos": null,
-        "estado": "aprobada",
-        "afecta_promedio": "si"
+        "estado": "aprobada"
       },
       {
         "nota": 4.5,
@@ -41,8 +38,7 @@
         "tipologia": "disciplinar_obligatoria",
         "semestre": 6,
         "prerrequisitos": ["3010435"],
-        "estado": "aprobada",
-        "afecta_promedio": "si"
+        "estado": "aprobada"
       },
       {
         "nota": 3.2,
@@ -52,8 +48,7 @@
         "tipologia": "fundamentacion_optativa",
         "semestre": 5,
         "prerrequisitos": ["1000003-M", "1000005-M"],
-        "estado": "aprobada",
-        "afecta_promedio": "si"
+        "estado": "aprobada"
       },
       {
         "nota": null,
@@ -63,8 +58,7 @@
         "tipologia":"fundamentacion_optativa",
         "semestre": 3,
         "prerrequisitos":["1000005-M"],
-        "estado":"cancelada",
-        "afecta_promedio":"si"
+        "estado":"cancelada"
     },
       {
         "nota": null,
@@ -74,8 +68,7 @@
         "tipologia":"fundamentacion_optativa",
         "semestre": 3,
         "prerrequisitos":["1000003-M","1000005-M"],
-        "estado":"cancelada",
-        "afecta_promedio":"si"
+        "estado":"cancelada"
     },
       {
         "nota": null,
@@ -85,8 +78,7 @@
         "tipologia":"fundamentacion_optativa",
         "semestre": 4,
         "prerrequisitos":["1000005-M"],
-        "estado":"cancelada",
-        "afecta_promedio":"si"
+        "estado":"cancelada"
     },
 
       {
@@ -97,8 +89,7 @@
         "tipologia":"disciplinar_obligatoria",
         "semestre": 5,
         "prerrequisitos":null,
-        "estado":"aprobada",
-        "afecta_promedio":"si"
+        "estado":"aprobada"
     },
     {
       "nota": null,
@@ -108,8 +99,7 @@
       "tipologia":"disciplinar_obligatoria",
       "semestre": 3,
       "prerrequisitos":null,
-      "estado":"cancelada",
-      "afecta_promedio":"si"
+      "estado":"cancelada"
   },
 
       {
@@ -120,8 +110,7 @@
         "tipologia":"fundamentacion_obligatoria",
         "semestre":2,
         "prerrequisitos":["1000005-M"],
-        "estado":"aprobada",
-        "afecta_promedio":"si"
+        "estado":"aprobada"
     },
       
       {
@@ -132,8 +121,7 @@
         "tipologia":"fundamentacion_obligatoria",
         "semestre": 3,
         "prerrequisitos":["1000008-M"],
-        "estado":"aprobada",
-        "afecta_promedio":"si"
+        "estado":"aprobada"
     },
 
       {
@@ -144,8 +132,7 @@
         "tipologia":"fundamentacion_obligatoria",
         "semestre":2,
         "prerrequisitos":["1000004-M"],
-        "estado":"aprobada",
-        "afecta_promedio":"si"
+        "estado":"aprobada"
     },
 
       {
@@ -156,8 +143,7 @@
         "tipologia":"fundamentacion_obligatoria",
         "semestre": 4,
         "prerrequisitos":["1000004-M","1000008-M"],
-        "estado":"aprobada",
-        "afecta_promedio":"si"
+        "estado":"aprobada"
     },
       
       {
@@ -168,8 +154,7 @@
         "tipologia":"fundamentacion_obligatoria",
         "semestre":2,
         "prerrequisitos":null,
-        "estado":"aprobada",
-        "afecta_promedio":"si"
+        "estado":"aprobada"
     },
       
       {
@@ -180,8 +165,7 @@
         "tipologia":"fundamentacion_obligatoria",
         "semestre":1,
         "prerrequisitos":null,
-        "estado":"aprobada",
-        "afecta_promedio":"si"
+        "estado":"aprobada"
     },
     {
       "nota": 3.5,
@@ -191,8 +175,7 @@
       "tipologia":"fundamentacion_obligatoria",
       "semestre":2,
       "prerrequisitos":null,
-      "estado":"aprobada",
-      "afecta_promedio":"si"
+      "estado":"aprobada"
   },
     {
         "nota": 2.9,
@@ -202,8 +185,7 @@
         "tipologia":"fundamentacion_obligatoria",
         "semestre":1,
         "prerrequisitos":null,
-        "estado":"no_aprobada",
-        "afecta_promedio":"si"
+        "estado":"no_aprobada"
     },
     {
         "nota": 4.6,
@@ -213,8 +195,7 @@
         "tipologia":"disciplinar_obligatoria",
         "semestre":1,
         "prerrequisitos":null,
-        "estado":"aprobada",
-        "afecta_promedio":"si"
+        "estado":"aprobada"
     },
     {
       "nota": 4.2,
@@ -224,8 +205,7 @@
       "tipologia":"libre_eleccion",
       "semestre":1,
       "prerrequisitos":null,
-      "estado":"aprobada",
-      "afecta_promedio":"si"
+      "estado":"aprobada"
   },
   {
     "nota": 4.1,
@@ -235,8 +215,7 @@
     "tipologia":"fundamentacion_optativa",
     "semestre": 3,
     "prerrequisitos":["3010651"],
-    "estado":"aprobada",
-    "afecta_promedio":"si"
+    "estado":"aprobada"
 }
   ]
 }

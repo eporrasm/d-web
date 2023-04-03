@@ -8,8 +8,7 @@
             "tipologia": "disciplinar_optativa",
             "semestre": 7,
             "prerrequisitos": ["3010476"],
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.4,
@@ -19,8 +18,7 @@
             "tipologia": "disciplinar_obligatoria",
             "semestre": 7,
             "prerrequisitos": ["3007852"],
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.4,
@@ -30,8 +28,7 @@
             "tipologia": "disciplinar_obligatoria",
             "semestre": 7,
             "prerrequisitos": ["3010408"],
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.8,
@@ -41,8 +38,7 @@
             "tipologia": "disciplinar_obligatoria",
             "semestre": 7,
             "prerrequisitos": ["3007867"],
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.1,
@@ -52,8 +48,7 @@
             "tipologia": "libre_eleccion",
             "semestre": 7,
             "prerrequisitos": null,
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.3,
@@ -63,8 +58,7 @@
             "tipologia": "libre_eleccion",
             "semestre": 6,
             "prerrequisitos": null,
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.8,
@@ -74,8 +68,7 @@
             "tipologia": "disciplinar_obligatoria",
             "semestre": 6,
             "prerrequisitos": ["3007744"],
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.3,
@@ -85,8 +78,7 @@
             "tipologia": "disciplinar_obligatoria",
             "semestre": 6,
             "prerrequisitos": ["3007853"],
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.6,
@@ -96,8 +88,7 @@
             "tipologia": "disciplinar_obligatoria",
             "semestre": 6,
             "prerrequisitos": ["3010651", "3007847"],
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.4,
@@ -107,8 +98,7 @@
             "tipologia": "disciplinar_obligatoria",
             "semestre": 6,
             "prerrequisitos": ["3010426"],
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 5.0,
@@ -118,8 +108,7 @@
             "tipologia": "libre_eleccion",
             "semestre": 5,
             "prerrequisitos": null,
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.2,
@@ -129,8 +118,7 @@
             "tipologia": "disciplinar_obligatoria",
             "semestre": 5,
             "prerrequisitos": ["3007741"],
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.7,
@@ -140,8 +128,7 @@
             "tipologia": "disciplinar_obligatoria",
             "semestre": 5,
             "prerrequisitos": ["3007331"],
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 5.0,
@@ -151,8 +138,7 @@
             "tipologia": "disciplinar_obligatoria",
             "semestre": 5,
             "prerrequisitos": ["3010435"],
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.8,
@@ -162,8 +148,7 @@
             "tipologia": "disciplinar_obligatoria",
             "semestre": 5,
             "prerrequisitos": ["3007324", "3010651"],
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.6,
@@ -173,8 +158,7 @@
             "tipologia": "libre_eleccion",
             "semestre": 5,
             "prerrequisitos": null,
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.9,
@@ -184,8 +168,7 @@
             "tipologia": "fundamentacion_optativa",
             "semestre": 4,
             "prerrequisitos": ["1000003-M", "1000005-M"],
-            "estado": "aprobada",
-            "afecta_promedio": "si"
+            "estado": "aprobada"
           },
           {
             "nota": 4.9,
@@ -195,8 +178,7 @@
             "tipologia":"disciplinar_obligatoria",
             "semestre":4,
             "prerrequisitos":["3007744"],
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
 
           {
@@ -207,8 +189,7 @@
             "tipologia":"disciplinar_obligatoria",
             "semestre":4,
             "prerrequisitos":["1000003-M","3010435"],
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
 
           {
@@ -219,8 +200,7 @@
             "tipologia":"disciplinar_obligatoria",
             "semestre":4,
             "prerrequisitos":["3010435","3006906"],
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
 
           {
@@ -231,8 +211,7 @@
             "tipologia":"libre_eleccion",
             "semestre":4,
             "prerrequisitos":null,
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
 
           {
@@ -243,8 +222,7 @@
             "tipologia":"fundamentacion_obligatoria",
             "semestre":3,
             "prerrequisitos":["1000005-M"],
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
 
           {
@@ -255,8 +233,7 @@
             "tipologia":"fundamentacion_optativa",
             "semestre":3,
             "prerrequisitos":["1000003-M","1000005-M"],
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
 
 
@@ -268,8 +245,7 @@
             "tipologia":"disciplinar_obligatoria",
             "semestre":3,
             "prerrequisitos":null,
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
 
           {
@@ -280,8 +256,7 @@
             "tipologia":"fundamentacion_obligatoria",
             "semestre":3,
             "prerrequisitos":["1000005-M"],
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
 
           {
@@ -292,8 +267,7 @@
             "tipologia":"disciplinar_obligatoria",
             "semestre":3,
             "prerrequisitos":null,
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
 
           
@@ -305,8 +279,7 @@
             "tipologia":"fundamentacion_obligatoria",
             "semestre":2,
             "prerrequisitos":["1000008-M"],
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
 
           {
@@ -317,8 +290,7 @@
             "tipologia":"fundamentacion_obligatoria",
             "semestre":2,
             "prerrequisitos":["1000004-M"],
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
 
           {
@@ -329,8 +301,7 @@
             "tipologia":"fundamentacion_obligatoria",
             "semestre":2,
             "prerrequisitos":["1000004-M","1000008-M"],
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
           
           {
@@ -341,8 +312,7 @@
             "tipologia":"fundamentacion_obligatoria",
             "semestre":2,
             "prerrequisitos":null,
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
           
           {
@@ -353,8 +323,7 @@
             "tipologia":"fundamentacion_obligatoria",
             "semestre":1,
             "prerrequisitos":null,
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
         {
             "nota": 4.2,
@@ -364,8 +333,7 @@
             "tipologia":"fundamentacion_obligatoria",
             "semestre":1,
             "prerrequisitos":null,
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
         {
             "nota": 4.6,
@@ -375,19 +343,17 @@
             "tipologia":"disciplinar_obligatoria",
             "semestre":1,
             "prerrequisitos":null,
-            "estado":"aprobada",
-            "afecta_promedio":"si"
+            "estado":"aprobada"
         },
         {
-            "nota": "APROBADA",
+            "nota": null,
             "creditos":2,
             "nombre":"Catedra Nacional de Induccion y Preparacion para la Vida Universitaria",
             "codigo":"1000089-M",
             "tipologia":"libre_eleccion",
             "semestre":1,
             "prerrequisitos":null,
-            "estado":"aprobada",
-            "afecta_promedio":"no"
+            "estado":"aprobada"
         },
         {
           "nota": 4.3,
@@ -397,8 +363,7 @@
           "tipologia":"libre_eleccion",
           "semestre":1,
           "prerrequisitos":null,
-          "estado":"aprobada",
-          "afecta_promedio":"si"
+          "estado":"aprobada"
       }
     ]
 }
