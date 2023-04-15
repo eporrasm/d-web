@@ -4,7 +4,7 @@ digraph {
 	sem_1 [height=0.02 style=invis width=0.02]
 	subgraph cluster_1 {
 		graph [margin=25 nodesep=0.02]
-		node [shape=cds style=filled width=3]
+		node [shape=box style=filled width=3]
 		color=darkgray fillcolor=lightGray fontname=Arial style=filled
 		label="Semestre 1"
 		"1000004-M" [label="1000004-M
@@ -45,7 +45,7 @@ Facultad de Minas
 	sem_2 [height=0.02 style=invis width=0.02]
 	subgraph cluster_2 {
 		graph [margin=25 nodesep=0.02]
-		node [shape=cds style=filled width=3]
+		node [shape=box style=filled width=3]
 		color=darkgray fillcolor=lightGray fontname=Arial style=filled
 		label="Semestre 2"
 		"1000003-M" [label="1000003-M
@@ -74,7 +74,7 @@ MATEMATICAS DISCRETAS
 	sem_3 [height=0.02 style=invis width=0.02]
 	subgraph cluster_3 {
 		graph [margin=25 nodesep=0.02]
-		node [shape=cds style=filled width=3]
+		node [shape=box style=filled width=3]
 		color=darkgray fillcolor=lightGray fontname=Arial style=filled
 		label="Semestre 3"
 		"1000006-M" [label="1000006-M
@@ -111,7 +111,7 @@ en ingenieria
 	sem_4 [height=0.02 style=invis width=0.02]
 	subgraph cluster_4 {
 		graph [margin=25 nodesep=0.02]
-		node [shape=cds style=filled width=3]
+		node [shape=box style=filled width=3]
 		color=darkgray fillcolor=lightGray fontname=Arial style=filled
 		label="Semestre 4"
 		3006907 [label="3006907
@@ -148,7 +148,7 @@ matematicas
 	sem_5 [height=0.02 style=invis width=0.02]
 	subgraph cluster_5 {
 		graph [margin=25 nodesep=0.02]
-		node [shape=cds style=filled width=3]
+		node [shape=box style=filled width=3]
 		color=darkgray fillcolor=lightGray fontname=Arial style=filled
 		label="Semestre 5"
 		3007863 [label="3007863
@@ -191,7 +191,7 @@ matematicas discretas
 	sem_6 [height=0.02 style=invis width=0.02]
 	subgraph cluster_6 {
 		graph [margin=25 nodesep=0.02]
-		node [shape=cds style=filled width=3]
+		node [shape=box style=filled width=3]
 		color=darkgray fillcolor=lightGray fontname=Arial style=filled
 		label="Semestre 6"
 		3010389 [label="3010389
@@ -226,7 +226,7 @@ SISTEMAS OPERATIVOS
 	sem_7 [height=0.02 style=invis width=0.02]
 	subgraph cluster_7 {
 		graph [margin=25 nodesep=0.02]
-		node [shape=cds style=filled width=3]
+		node [shape=box style=filled width=3]
 		color=darkgray fillcolor=lightGray fontname=Arial style=filled
 		label="Semestre 7"
 		3007854 [label="3007854
