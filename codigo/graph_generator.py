@@ -12,28 +12,31 @@ with open(
 
 asignaturas = datos["asignaturas"]
 asignaturas.sort(key= lambda asig: (
-                                    #-len(asig['prerrequisitos']) if asig['prerrequisitos'] != None else 0, 
-                                    asig['semestre'] ))
+                                    asig['semestre'],
+                                    asig['tipologia'][9:], #Para que quede ordenado Fundamentación -> Disciplinar -> Libre
+                                    asig['codigo']
+                                    #-len(asig['prerrequisitos']) if asig['prerrequisitos'] != None else 0 
+                                    ))
 
 
 # Inicializando el grafo
 dot = Digraph(comment='Historia academica', format='png',graph_attr={'compound':'true', 
-                                                                     'splines':'ortho',
+                                                                     'splines':'ortho'
                                                                      })
 
 
 # Definimos los esquemas de colores
 colores_por_tipologia = {
     # Morado para Fundamentación
-    'fundamentacion_optativa': "#9f86c0", 
-    'fundamentacion_obligatoria': "#9f86c0",
+    'fundamentacion_optativa': "#b094c4", 
+    'fundamentacion_obligatoria': "#b094c4",
     # Verde para disciplinares
-    'disciplinar_obligatoria': "#52b788",
-    'disciplinar_optativa': "#52b788",  
+    'disciplinar_obligatoria': "#12a79d",
+    'disciplinar_optativa': "#12a79d",  
     # Amarillo para libre elección
-    'libre_eleccion': "#ffca3a", 
+    'libre_eleccion': "#fdbe26", 
     # Gris para nivelación
-    'nivelacion': "#EBEBEB", 
+    'nivelacion': "#808285", 
 }
 
 #Encontramos el último semestre cursado por el alumno
@@ -58,7 +61,7 @@ for i in range(1,maxsem+1):
         sem.attr(fontname="Arial",
                  style='filled',
                  fillcolor='lightGray',
-                 color='darkgray'
+                 color='darkgray',
         )
 
         sem.attr(label=f"Semestre {i}")
@@ -70,7 +73,7 @@ for i in range(1,maxsem+1):
                 style='invis')
         
         
-        sem.node_attr['style'] = 'filled'
+        sem.node_attr['style'] = 'rounded,filled'
         sem.node_attr['shape'] = 'box'
         # sem.node_attr['fixedsize'] = 'true'
         sem.node_attr['width'] = '3'
