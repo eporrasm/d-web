@@ -1,12 +1,11 @@
 // Historia academica
-digraph {
+digraph plan_estudios {
 	graph [compound=true splines=ortho]
-	sem_1 [height=0.02 style=invis width=0.02]
 	subgraph cluster_1 {
 		graph [margin=25 nodesep=0.02]
 		node [shape=box style="rounded,filled" width=3]
-		color=darkgray fillcolor=lightGray fontname=Arial style=filled
-		label="Semestre 1"
+		color=darkgray fillcolor=lightGray fontname=Arial label="Semestre 1" style=filled
+		sem_1 [height=0.02 style=invis width=0.02]
 		"1000004-M" [label="1000004-M
 CALCULO DIFERENCIAL
 4 créditos
@@ -39,15 +38,14 @@ Facultad de Minas
 2 créditos
 4.3" color="#000000" fillcolor="#fdbe26" group=sem1 penwidth=1]
 		"1000089-M" -> 3009511 [style=invis]
-		"Promedio 1" [label="PAPA 4.4|PA 5|PAPPI 4.4" fillcolor="#EBEBEB" shape=record]
+		"Promedio 1" [label="PAPA 4.4|PAPPI 4.4" fillcolor="#EBEBEB" shape=record]
 		3009511 -> "Promedio 1" [style=invis]
 	}
-	sem_2 [height=0.02 style=invis width=0.02]
 	subgraph cluster_2 {
 		graph [margin=25 nodesep=0.02]
 		node [shape=box style="rounded,filled" width=3]
-		color=darkgray fillcolor=lightGray fontname=Arial style=filled
-		label="Semestre 2"
+		color=darkgray fillcolor=lightGray fontname=Arial label="Semestre 2" style=filled
+		sem_2 [height=0.02 style=invis width=0.02]
 		"1000003-M" [label="1000003-M
 ALGEBRA LINEAL
 4 créditos
@@ -68,15 +66,14 @@ MATEMATICAS DISCRETAS
 4 créditos
 4.6" color="#000000" fillcolor="#b094c4" group=sem2 penwidth=1]
 		"1000019-M" -> 3006906 [style=invis]
-		"Promedio 2" [label="PAPA 4.5|PA 5|PAPPI 4.6" fillcolor="#EBEBEB" shape=record]
+		"Promedio 2" [label="PAPA 4.5|PAPPI 4.6" fillcolor="#EBEBEB" shape=record]
 		3006906 -> "Promedio 2" [style=invis]
 	}
-	sem_3 [height=0.02 style=invis width=0.02]
 	subgraph cluster_3 {
 		graph [margin=25 nodesep=0.02]
 		node [shape=box style="rounded,filled" width=3]
-		color=darkgray fillcolor=lightGray fontname=Arial style=filled
-		label="Semestre 3"
+		color=darkgray fillcolor=lightGray fontname=Arial label="Semestre 3" style=filled
+		sem_3 [height=0.02 style=invis width=0.02]
 		"1000006-M" [label="1000006-M
 CALCULO EN VARIAS
 VARIABLES
@@ -105,15 +102,14 @@ programacion
 3 créditos
 5" color="#000000" fillcolor="#12a79d" group=sem3 penwidth=1]
 		3010408 -> 3010435 [style=invis]
-		"Promedio 3" [label="PAPA 4.5|PA 5|PAPPI 4.5" fillcolor="#EBEBEB" shape=record]
+		"Promedio 3" [label="PAPA 4.5|PAPPI 4.5" fillcolor="#EBEBEB" shape=record]
 		3010435 -> "Promedio 3" [style=invis]
 	}
-	sem_4 [height=0.02 style=invis width=0.02]
 	subgraph cluster_4 {
 		graph [margin=25 nodesep=0.02]
 		node [shape=box style="rounded,filled" width=3]
-		color=darkgray fillcolor=lightGray fontname=Arial style=filled
-		label="Semestre 4"
+		color=darkgray fillcolor=lightGray fontname=Arial label="Semestre 4" style=filled
+		sem_4 [height=0.02 style=invis width=0.02]
 		3006907 [label="3006907
 METODOS NUMERICOS
 4 créditos
@@ -142,15 +138,14 @@ matematicas
 4 créditos
 4.9" color="#000000" fillcolor="#fdbe26" group=sem4 penwidth=1]
 		3010426 -> 3010334 [style=invis]
-		"Promedio 4" [label="PAPA 4.6|PA 5|PAPPI 4.8" fillcolor="#EBEBEB" shape=record]
+		"Promedio 4" [label="PAPA 4.6|PAPPI 4.8" fillcolor="#EBEBEB" shape=record]
 		3010334 -> "Promedio 4" [style=invis]
 	}
-	sem_5 [height=0.02 style=invis width=0.02]
 	subgraph cluster_5 {
 		graph [margin=25 nodesep=0.02]
 		node [shape=box style="rounded,filled" width=3]
-		color=darkgray fillcolor=lightGray fontname=Arial style=filled
-		label="Semestre 5"
+		color=darkgray fillcolor=lightGray fontname=Arial label="Semestre 5" style=filled
+		sem_5 [height=0.02 style=invis width=0.02]
 		3007331 [label="3007331
 SIMULACION DE SISTEMAS
 3 créditos
@@ -185,15 +180,14 @@ matematicas discretas
 4 créditos
 4.6" color="#000000" fillcolor="#fdbe26" group=sem5 penwidth=1]
 		3007863 -> 3010390 [style=invis]
-		"Promedio 5" [label="PAPA 4.6|PA 5|PAPPI 4.7" fillcolor="#EBEBEB" shape=record]
+		"Promedio 5" [label="PAPA 4.6|PAPPI 4.7" fillcolor="#EBEBEB" shape=record]
 		3010390 -> "Promedio 5" [style=invis]
 	}
-	sem_6 [height=0.02 style=invis width=0.02]
 	subgraph cluster_6 {
 		graph [margin=25 nodesep=0.02]
 		node [shape=box style="rounded,filled" width=3]
-		color=darkgray fillcolor=lightGray fontname=Arial style=filled
-		label="Semestre 6"
+		color=darkgray fillcolor=lightGray fontname=Arial label="Semestre 6" style=filled
+		sem_6 [height=0.02 style=invis width=0.02]
 		3007741 [label="3007741
 ESTRUCTURA DE DATOS
 3 créditos
@@ -220,15 +214,14 @@ Fundamentos de analisis
 4 créditos
 4.3" color="#000000" fillcolor="#fdbe26" group=sem6 penwidth=1]
 		3010476 -> 3010389 [style=invis]
-		"Promedio 6" [label="PAPA 4.6|PA 5|PAPPI 4.5" fillcolor="#EBEBEB" shape=record]
+		"Promedio 6" [label="PAPA 4.6|PAPPI 4.5" fillcolor="#EBEBEB" shape=record]
 		3010389 -> "Promedio 6" [style=invis]
 	}
-	sem_7 [height=0.02 style=invis width=0.02]
 	subgraph cluster_7 {
 		graph [margin=25 nodesep=0.02]
 		node [shape=box style="rounded,filled" width=3]
-		color=darkgray fillcolor=lightGray fontname=Arial style=filled
-		label="Semestre 7"
+		color=darkgray fillcolor=lightGray fontname=Arial label="Semestre 7" style=filled
+		sem_7 [height=0.02 style=invis width=0.02]
 		3007865 [label="3007865
 REDES Y
 TELECOMUNICACIONES I
@@ -259,8 +252,48 @@ de la computacion
 4 créditos
 4.1" color="#000000" fillcolor="#fdbe26" group=sem7 penwidth=1]
 		3007854 -> 3010393 [style=invis]
-		"Promedio 7" [label="PAPA 4.6|PA 5|PAPPI 4.4" fillcolor="#EBEBEB" shape=record]
+		"Promedio 7" [label="PAPA 4.6|PAPPI 4.4" fillcolor="#EBEBEB" shape=record]
 		3010393 -> "Promedio 7" [style=invis]
+	}
+	subgraph cluster_8 {
+		graph [margin=25 nodesep=0.02]
+		node [shape=box style="rounded,filled" width=3]
+		color=darkgray fillcolor=lightGray fontname=Arial label="Semestre 8 (Actual)" style=filled
+		sem_8 [height=0.02 style=invis width=0.02]
+		3011020 [label="3011020
+Fundamentos de analitica
+3 créditos
+INSCRITA" color="#000000" fillcolor="#12a79d" group=sem8 penwidth=1]
+		sem_8 -> 3011020 [style=invis]
+		3007848 [label="3007848
+BASE DE DATOS II
+3 créditos
+INSCRITA" color="#000000" fillcolor="#12a79d" group=sem8 penwidth=1]
+		3011020 -> 3007848 [style=invis]
+		3009150 [label="3009150
+Redes Neuronales
+Artificiales y Algoritmos
+Bio-Inspirados
+3 créditos
+INSCRITA" color="#000000" fillcolor="#12a79d" group=sem8 penwidth=1]
+		3007848 -> 3009150 [style=invis]
+		3009430 [label="3009430
+Analisis y Diseno de
+Algoritmos
+3 créditos
+INSCRITA" color="#000000" fillcolor="#12a79d" group=sem8 penwidth=1]
+		3009150 -> 3009430 [style=invis]
+		3011019 [label="3011019
+Desarrollo web
+3 créditos
+INSCRITA" color="#000000" fillcolor="#12a79d" group=sem8 penwidth=1]
+		3009430 -> 3011019 [style=invis]
+		3010394 [label="3010394
+Teoria basica de la
+probabilidad
+4 créditos
+INSCRITA" color="#000000" fillcolor="#fdbe26" group=sem8 penwidth=1]
+		3011019 -> 3010394 [style=invis]
 	}
 	"1000008-M" -> "1000003-M" [constraint=false]
 	"1000004-M" -> "1000005-M" [constraint=false]
@@ -291,6 +324,13 @@ de la computacion
 	3010408 -> 3010407 [constraint=false]
 	3007852 -> 3010440 [constraint=false]
 	3010476 -> 3007854 [constraint=false]
+	3010651 -> 3011020 [constraint=false]
+	3007847 -> 3011020 [constraint=false]
+	3007847 -> 3007848 [constraint=false]
+	3010476 -> 3009150 [constraint=false]
+	3007741 -> 3009430 [constraint=false]
+	3007847 -> 3011019 [constraint=false]
+	3007865 -> 3011019 [constraint=false]
 	start -> sem_1 [lhead=cluster_1 style=invis]
 	start -> sem_2 [lhead=cluster_2 style=invis]
 	start -> sem_3 [lhead=cluster_3 style=invis]
@@ -298,5 +338,6 @@ de la computacion
 	start -> sem_5 [lhead=cluster_5 style=invis]
 	start -> sem_6 [lhead=cluster_6 style=invis]
 	start -> sem_7 [lhead=cluster_7 style=invis]
+	start -> sem_8 [lhead=cluster_8 style=invis]
 	start [shape=Mdiamond style=invis]
 }
