@@ -74,22 +74,22 @@ MATEMATICAS DISCRETAS
 		node [shape=box style="rounded,filled" width=3]
 		color=darkgray fillcolor=lightGray fontname=Arial label="Semestre 3" style=filled
 		sem_3 [height=0.02 style=invis width=0.02]
+		3010651 [label="3010651
+Estadistica I
+3 créditos
+4.0" color="#000000" fillcolor="#b094c4" group=sem3 penwidth=1]
+		sem_3 -> 3010651 [style=invis]
 		"1000006-M" [label="1000006-M
 CALCULO EN VARIAS
 VARIABLES
 4 créditos
 4.4" color="#000000" fillcolor="#b094c4" group=sem3 penwidth=1]
-		sem_3 -> "1000006-M" [style=invis]
-		3010651 [label="3010651
-Estadistica I
-3 créditos
-4.0" color="#000000" fillcolor="#b094c4" group=sem3 penwidth=1]
-		"1000006-M" -> 3010651 [style=invis]
+		3010651 -> "1000006-M" [style=invis]
 		"1000007-M" [label="1000007-M
 ECUACIONES DIFERENCIALES
 4 créditos
 4.5" color="#000000" fillcolor="#b094c4" group=sem3 penwidth=1]
-		3010651 -> "1000007-M" [style=invis]
+		"1000006-M" -> "1000007-M" [style=invis]
 		3010408 [label="3010408
 Fundamentos de proyectos
 en ingenieria
@@ -115,12 +115,18 @@ METODOS NUMERICOS
 4 créditos
 4.9" color="#000000" fillcolor="#b094c4" group=sem4 penwidth=1]
 		sem_4 -> 3006907 [style=invis]
+		3010334 [label="3010334
+Fundamentos de
+matematicas
+4 créditos
+4.9" color="#000000" fillcolor="#b094c4" group=sem4 penwidth=1]
+		3006907 -> 3010334 [style=invis]
 		3007324 [label="3007324
 INVESTIGACION DE
 OPERACIONES I
 3 créditos
 4.9" color="#000000" fillcolor="#12a79d" group=sem4 penwidth=1]
-		3006907 -> 3007324 [style=invis]
+		3010334 -> 3007324 [style=invis]
 		3007853 [label="3007853
 INGENIERIA DE SOFTWARE
 3 créditos
@@ -132,14 +138,8 @@ programacion
 3 créditos
 4.6" color="#000000" fillcolor="#12a79d" group=sem4 penwidth=1]
 		3007853 -> 3010426 [style=invis]
-		3010334 [label="3010334
-Fundamentos de
-matematicas
-4 créditos
-4.9" color="#000000" fillcolor="#fdbe26" group=sem4 penwidth=1]
-		3010426 -> 3010334 [style=invis]
 		"Promedio 4" [label="PAPA 4.6|PAPPI 4.8" fillcolor="#EBEBEB" shape=record]
-		3010334 -> "Promedio 4" [style=invis]
+		3010426 -> "Promedio 4" [style=invis]
 	}
 	subgraph cluster_5 {
 		graph [margin=25 nodesep=0.02]
@@ -299,8 +299,8 @@ INSCRITA" color="#000000" fillcolor="#fdbe26" group=sem8 penwidth=1]
 	"1000004-M" -> "1000005-M" [constraint=false]
 	"1000004-M" -> "1000019-M" [constraint=false]
 	"1000008-M" -> "1000019-M" [constraint=false]
-	"1000005-M" -> "1000006-M" [constraint=false]
 	"1000005-M" -> 3010651 [constraint=false]
+	"1000005-M" -> "1000006-M" [constraint=false]
 	"1000003-M" -> "1000007-M" [constraint=false]
 	"1000005-M" -> "1000007-M" [constraint=false]
 	"1000003-M" -> 3006907 [constraint=false]

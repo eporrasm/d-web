@@ -548,7 +548,7 @@
         "creditos":4,
         "nombre":"Fundamentos de matematicas",
         "codigo":"3010334",
-        "tipologia":"libre_eleccion",
+        "tipologia": "fundamentacion_optativa",
         "semestre":4,
         "prerrequisitos":null,
         "estado":"aprobada"
@@ -559,7 +559,7 @@
         "creditos":4,
         "nombre":"CALCULO EN VARIAS VARIABLES",
         "codigo":"1000006-M",
-        "tipologia":"fundamentacion_obligatoria",
+        "tipologia": "fundamentacion_optativa",
         "semestre":3,
         "prerrequisitos":["1000005-M"],
         "estado":"aprobada"
@@ -703,5 +703,7 @@
       "prerrequisitos":null,
       "estado":"aprobada"
     }
-  ]
+  ],
+  "creditos_opt_fund" : 16,
+  "creditos_opt_disc" : 22
 }

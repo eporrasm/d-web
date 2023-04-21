@@ -48,6 +48,12 @@ plan_estudios = Digraph(name='plan_estudios',
 max_sem = 0
 en_curso = False
 dict_materias_cursadas = dict()
+
+cont_creditos_opt_fund = 0
+cont_creditos_opt_disc = 0
+creditos_opt_fund = int(datos["creditos_opt_fund"])
+creditos_opt_disc = int(datos["creditos_opt_disc"])
+
 #wrapper para label de los nodos asignaturas
 wrapper = textwrap.TextWrapper(width = 25)
 
@@ -61,6 +67,13 @@ for asignatura in asignaturas:
         en_curso = True
 
     dict_materias_cursadas[asignatura["codigo"]] = "no_cursada"
+
+    if asignatura['tipologia'] == 'disciplinar_optativa' and asignatura['estado'] == 'aprobada':
+        cont_creditos_opt_disc += int(asignatura['creditos'])
+
+    if asignatura['tipologia'] == 'fundamentacion_optativa' and asignatura['estado'] == 'aprobada':
+        cont_creditos_opt_fund += int(asignatura['creditos'])
+    
 
 
 #Se crea una lista para llevar control del PAPA. El primer valor
@@ -262,17 +275,23 @@ with asignaturas_cursables.subgraph(name=f'cluster_cursables',
             
 
             # Check para comprobar que todos los prerrequisitos estén aprobados
-            if asignatura['prerrequisitos'] == None:
-                continue
-
-            for cod in asignatura['prerrequisitos']:
-                if dict_materias_cursadas[cod] != 'aprobada':
-                    prerrequisitos_cumplidos = False
-                    break
+            if asignatura['prerrequisitos'] != None:
+                for cod in asignatura['prerrequisitos']:
+                    if dict_materias_cursadas[cod] != 'aprobada':
+                        prerrequisitos_cumplidos = False
+                        break
+            
             if not prerrequisitos_cumplidos:
                 continue
+            
+            if asignatura['tipologia'] == 'fundamentacion_optativa' \
+                and cont_creditos_opt_fund >= creditos_opt_fund:
+                continue
 
-
+            if asignatura['tipologia'] == 'disciplinar_optativa' \
+                and cont_creditos_opt_disc >= creditos_opt_disc:
+                continue
+    
             wrap_list = wrapper.wrap(text=asignatura['nombre'])
             nombre_wrappeado = "\n".join(wrap_list)
 

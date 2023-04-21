@@ -5,28 +5,10 @@ digraph asignaturas_cursables {
 		graph [margin=25 nodesep=0.02]
 		node [shape=box style="rounded,filled" width=3]
 		color=darkgray fillcolor=lightGray fontname=Arial style=filled
-		"1000017-M" [label="1000017-M
-FISICA DE ELECTRICIDAD Y
-MAGNETISMO
-4 créditos
-" color="#000000" fillcolor="#b094c4" penwidth=1]
-		"1000020-M" [label="1000020-M
-FISICA DE OSCILACIONES,
-ONDAS Y OPTICA
-4 créditos
-" color="#000000" fillcolor="#b094c4" penwidth=1]
-		3006905 [label="3006905
-MATEMATICAS ESPECIALES
-4 créditos
-" color="#000000" fillcolor="#b094c4" penwidth=1]
-		3006915 [label="3006915
-ESTADISTICA II
-4 créditos
-" color="#000000" fillcolor="#b094c4" penwidth=1]
-		3010391 [label="3010391
-Geometria Aplicada
-4 créditos
-" color="#000000" fillcolor="#b094c4" penwidth=1]
+		3007202 [label="3007202
+FUNDAMENTOS DE ECONOMIA
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
 		3007311 [label="3007311
 DINAMICA DE SISTEMAS
 3 créditos
@@ -58,6 +40,11 @@ inteligencia de negocios
 		3009151 [label="3009151
 Introduccion a la
 Robotica
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3010425 [label="3010425
+Teoria administrativa y
+organizacional
 3 créditos
 " color="#000000" fillcolor="#12a79d" penwidth=1]
 		3010585 [label="3010585
