@@ -2,6 +2,7 @@ const pdfViewer1 = document.getElementById('pdf-viewer1');
 const pdfViewer2 = document.getElementById('pdf-viewer2');
 
 document.querySelector('form').addEventListener('submit', (event) => {
+    
     event.preventDefault(); // Evita que se envíe el formulario
     const jsonInput = document.querySelector('#json_input').value; // Obtiene el valor del textarea
     

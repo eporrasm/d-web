@@ -309,5 +309,5 @@ def generate_graph_pdf(json_data):
                                     )
         
     # Render the graph to a file
-    asignaturas_cursables.render(directory='output', view=True)
+    asignaturas_cursables.render(directory='output')
     #'asignatur_catalog/asignaturas_cursables.gv.pdf'       
