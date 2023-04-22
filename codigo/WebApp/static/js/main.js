@@ -10,15 +10,18 @@ document.querySelector('form').addEventListener('submit', (event) => {
     (async () => {
       const rawResponse = await fetch(url, {
         method: 'POST',
-        // headers: {
-        //   'Content-Type': 'application/json'
-        // },
-        body: JSON.stringify(jsonInput)
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: jsonInput
       });
-      const content = await rawResponse.json()
+      const content = await rawResponse.json();
+    
       console.log(content);
+    })();
 
       pdfViewer1.src = "../output1#view=Fit&statusbar=0&messages=0&navpanes=0&scrollbar=0";
       pdfViewer2.src = "../output2#view=Fit&statusbar=0&messages=0&navpanes=0&scrollbar=0";
-  });
+  ;
 });

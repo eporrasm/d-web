@@ -13,10 +13,11 @@ def index():
 def api():
     if request.method == 'POST':
         json_input = request.get_json(silent=True)
+        #print(json_input)
         pdf_file_path = generate_graph_pdf(json_input)
         # Renderizar una plantilla HTML que muestra un botón para descargar el PDF
-        #print(pdf_file_path)
-        return json_input
+        
+        return jsonify(json_input)
 
 @app.route('/output1', methods=['GET'])
 def output1():
