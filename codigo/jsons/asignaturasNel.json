@@ -217,5 +217,7 @@
     "prerrequisitos":["3010651"],
     "estado":"aprobada"
 }
-  ]
+  ],
+  "creditos_opt_fund" : 16,
+  "creditos_opt_disc" : 22
 }
