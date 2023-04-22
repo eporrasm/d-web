@@ -1,0 +1,77 @@
+// asignaturas cursables
+digraph asignaturas_cursables {
+	graph [compound=true]
+	subgraph cluster_cursables {
+		graph [margin=25 nodesep=0.02]
+		node [shape=box style="rounded,filled" width=3]
+		color=darkgray fillcolor=lightGray fontname=Arial style=filled
+		3007202 [label="3007202
+FUNDAMENTOS DE ECONOMIA
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3007311 [label="3007311
+DINAMICA DE SISTEMAS
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3007325 [label="3007325
+INVESTIGACION DE
+OPERACIONES II
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3007595 [label="3007595
+REDES TELEINFORMATICAS I
+4 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3007872 [label="3007872
+SISTEMAS COMPLEJOS
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3007873 [label="3007873
+TEORIA DE LA ORGANIZACION
+INDUSTRIAL
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3008883 [label="3008883
+Fundamentos de sistemas
+de informacion e
+inteligencia de negocios
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3009151 [label="3009151
+Introduccion a la
+Robotica
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3010425 [label="3010425
+Teoria administrativa y
+organizacional
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3010585 [label="3010585
+Introduccion a la
+creacion de videojuegos
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3010757 [label="3010757
+Ciencias de la
+computacion y
+aplicaciones moviles
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3010836 [label="3010836
+Catedra de sistemas: una
+vision historico-cultural
+de la computacion
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3011018 [label="3011018
+Creacion Multimedia
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+		3011021 [label="3011021
+Programacion para
+ingenieria
+3 créditos
+" color="#000000" fillcolor="#12a79d" penwidth=1]
+	}
+}

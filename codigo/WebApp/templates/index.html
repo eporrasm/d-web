@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends "bootstrap/base.html" %}
+<html>
+  <head>
+    {% block title %}
+    Web App Flask
+    {% endblock %}
+  </head>
+  <body>
+    {% block content %}
+    <h1 class="text-center">Generar PDF</h1>
+    <div class="form-floating">
+        <form method="POST">
+        <textarea class="form-control" placeholder="Inserta el json" id="json_input" rows="10"></textarea>
+        <br>
+        <button type="submit" class="btn btn-primary">Generar PDF</button>
+        </form>
+    </div>
+    <div>
+        <h1>Grafo</h1>
+        <iframe id="pdf-viewer1" width="100%" height="1000"></iframe>
+    </div>
+    <div>
+      <h1>Pendientes</h1>
+      <iframe id="pdf-viewer2" width="100%" height="1000"></iframe>
+  </div>
+    {% endblock %}
+    {% block scripts %}
+    <script src="{{url_for('.static', filename='/js/main.js')}}"></script>
+    {{super()}}
+    {% endblock %}
+  </body>
+</html>
