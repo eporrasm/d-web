@@ -8,22 +8,21 @@
   </head>
   <body>
     {% block content %}
-    <h1 class="text-center">Generar PDF</h1>
+    <h1 class="text-center">Generar PDFs</h1>
     <div class="form-floating">
         <form method="POST">
         <textarea class="form-control" placeholder="Inserta el json" id="json_input" rows="10"></textarea>
         <br>
-        <button type="submit" class="btn btn-primary">Generar PDF</button>
+        <button type="submit" class="btn btn-primary">Generar PDFs</button>
         </form>
     </div>
-    <div>
+    <div id="output_div" style="display:none">
         <h1>Grafo</h1>
-        <iframe id="pdf-viewer1" width="100%" height="1000"></iframe>
+        <iframe  id="pdf-viewer1" width="100%" height="1000"></iframe>
+
+        <h1>Pendientes</h1>
+        <iframe  id="pdf-viewer2" width="100%" height="650"></iframe>
     </div>
-    <div>
-      <h1>Pendientes</h1>
-      <iframe id="pdf-viewer2" width="100%" height="1000"></iframe>
-  </div>
     {% endblock %}
     {% block scripts %}
     <script src="{{url_for('.static', filename='/js/main.js')}}"></script>
