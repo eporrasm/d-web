@@ -49,13 +49,15 @@ def generate_graph_pdf(json_data):
     max_sem = 0
     en_curso = False
     max_asignaturas_por_semestre = 0
-    dict_materias_cursadas = dict()
     num_asignaturas_por_semestre = dict()
 
-    cont_creditos_opt_fund = 0
-    cont_creditos_opt_disc = 0
+    #diccionario para llevar control de las materias que se repiten
+    dict_materias_cursadas = dict()
     creditos_opt_fund = int(datos["creditos_opt_fund"])
     creditos_opt_disc = int(datos["creditos_opt_disc"])
+    cont_creditos_opt_fund = 0
+    cont_creditos_opt_disc = 0
+    
 
     #wrapper para label de los nodos asignaturas
     wrapper = textwrap.TextWrapper(width = 25)
@@ -63,20 +65,24 @@ def generate_graph_pdf(json_data):
 
     for asignatura in asignaturas:
         semestre_asignatura = asignatura['semestre'] if asignatura['semestre'] != None else -float('inf')
+        #max_sem es el último semestre cursado
         if semestre_asignatura > max_sem:
             max_sem = semestre_asignatura
-        
+        #si por lo menos una materia es "inscrita", luego hay un semestre en curso
         if asignatura['estado'] == 'inscrita':
             en_curso = True
-
+        #se hace el control de las materias que se han aprobado, perdido o no cursado
         dict_materias_cursadas[asignatura["codigo"]] = "no_cursada"
 
+        #para cada semestre se hace el conteo de los creditos optativos
+        #para saber si se deben mostrar entre las materias cursables
         if asignatura['tipologia'] == 'disciplinar_optativa' and asignatura['estado'] == 'aprobada':
             cont_creditos_opt_disc += int(asignatura['creditos'])
 
         if asignatura['tipologia'] == 'fundamentacion_optativa' and asignatura['estado'] == 'aprobada':
             cont_creditos_opt_fund += int(asignatura['creditos'])
         
+        #conteo de asignaturas por cada semestre
         if asignatura['semestre']:
             if asignatura['semestre'] not in num_asignaturas_por_semestre:
                 num_asignaturas_por_semestre[asignatura['semestre']] = 1
@@ -90,6 +96,7 @@ def generate_graph_pdf(json_data):
     #Se crea una lista para llevar control del PAPA. El primer valor
     #guardará el peso de la nota y la segunda los créditos
     PAPA = [0,0]
+    #hablalomiPA
     hablalomiPA = dict()
     # Agregamos un nodo por cada asignatura
     for i in range(1,max_sem+1):
@@ -100,6 +107,7 @@ def generate_graph_pdf(json_data):
 
             label_semestre = f'Semestre {i}'
 
+            #en caso de que el semestre sea el último y se esté cursando es el Actual
             if i == max_sem and en_curso:
                 label_semestre += ' (Actual)'
 
@@ -126,7 +134,7 @@ def generate_graph_pdf(json_data):
             asignatura_prev = f'sem_{i}'
             asignatura_por_semestre = list()
 
-
+            #Se añaden las asignaturas, controlando su estado y poniéndoles sus datos según corresponda
             for asignatura in asignaturas:
                 if asignatura['semestre'] == i:
                     asignatura_por_semestre.append(asignatura)
@@ -241,18 +249,21 @@ def generate_graph_pdf(json_data):
                         hablalomiPA[asignatura['codigo']] = (asignatura["nota"], asignatura['creditos'])
 
 
-
+            #Chequeamos que el semestre no esté en curso para mostrar los promedios
             if ((not en_curso) or (max_sem != i)):
                 credPA = 0
                 notPA = 0
+                #Guardamos en las variables el total peso de las materias y el número de créditos
                 for llave in hablalomiPA.keys():
                     notPA += hablalomiPA[llave][0]*hablalomiPA[llave][1]
                     credPA += hablalomiPA[llave][1]
                 PA = None
                 if credPA!=0:
                     PA = round(notPA / credPA,1)
+                #Calculamos el PAPA que es el peso ponderado de TODAS las materias divido el número de créditos
                 PAPA_semestre = round(PAPA[0]/PAPA[1],1)
-                PAPPI = round(PAPPI[0]/PAPPI[1],1)  # |PA {PA}|
+                PAPPI = round(PAPPI[0]/PAPPI[1],1) 
+                #mostramos los 3 valores en un struct
                 node_label=f"PAPA {PAPA_semestre}|PAPPI {PAPPI}|PA {PA}"
                     
                 sem.node(name=f'Promedio {i}',
@@ -264,6 +275,7 @@ def generate_graph_pdf(json_data):
                 sem.edge(asignatura_prev, f'Promedio {i}', style='invis')
 
             else:
+                #si el semestre está en curso, no tiene promedios aún.
                 node_label=f"Semestre en curso"
                 sem.node(name=f'Promedio {i}',
                         shape='record',
@@ -312,7 +324,7 @@ def generate_graph_pdf(json_data):
                                     graph_attr={'compound':'true'}
                                     )
 
-
+    #lista mñaterias que se deben mostrar en el segundo pdf
     lista_codigos_por_cursar = list()
     with asignaturas_cursables.subgraph(name=f'cluster_cursables',
                                         graph_attr={'margin':'25','nodesep':'0.02'}) as cluster_cursables:
@@ -348,6 +360,8 @@ def generate_graph_pdf(json_data):
                             prerrequisitos_cumplidos = False
                             break
                 
+                #no se muestran las materias cuyos prerrequisitos no se hayan cursado
+                #ni aquellas que son optativas y ya se han visto todos los créditos del componente
                 if not prerrequisitos_cumplidos:
                     continue
                 
@@ -367,6 +381,8 @@ def generate_graph_pdf(json_data):
                                                             asignatura['creditos']
                                                         )
 
+
+                # Se generan los nodos de las materias del segundo pdf
                 cluster_cursables.node(name=asignatura['codigo'],
                                     label=node_label,
                                     color='#000000',
@@ -374,7 +390,8 @@ def generate_graph_pdf(json_data):
                                     fillcolor=colores_por_tipologia[asignatura["tipologia"]],
                                     penwidth='1'
                                     )
-                
+                #se forman grupos de a 5 que se unen entre ellas para que queden
+                #con una estructura interpretable.
                 if contador_asignaturas_linea != 0:
                     cluster_cursables.edge(asignatura_anteriora, asignatura['codigo'], style='invis' )
 
