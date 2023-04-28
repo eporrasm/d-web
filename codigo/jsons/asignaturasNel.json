@@ -1,6 +1,469 @@
 {
     "asignaturas":[
       {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "FUNDAMENTOS DE ECONOMIA",
+        "codigo": "3007202",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": null,
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Programacion para ingenieria",
+        "codigo": "3011021",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["1000003-M", "3010435"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Creacion Multimedia",
+        "codigo": "3011018",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3007744"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Catedra de sistemas: una vision historico-cultural de la computacion",
+        "codigo": "3010836",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3010438"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Ciencias de la computacion y aplicaciones moviles",
+        "codigo": "3010757",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3007847", "3007865"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Introduccion a la creacion de videojuegos",
+        "codigo": "3010585",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3007744"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Fundamentos de mercadeo",
+        "codigo": "3010524",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3010425"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Gestion del talento humano",
+        "codigo": "3010500",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3010425"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Teoria administrativa y organizacional",
+        "codigo": "3010425",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": null,
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Introduccion a la Robotica",
+        "codigo": "3009151",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3010476"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "TEORIA DE LA ORGANIZACION INDUSTRIAL",
+        "codigo": "3007873",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3007324"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 4,
+        "nombre": "REDES TELEINFORMATICAS I",
+        "codigo": "3007595",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3007865"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "DINAMICA DE SISTEMAS",
+        "codigo": "3007311",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3007331"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 4,
+        "nombre": "REDES TELEINFORMATICAS II",
+        "codigo": "3007596",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3007595"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "INVESTIGACION DE OPERACIONES II",
+        "codigo": "3007325",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3007324"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "SISTEMAS COMPLEJOS",
+        "codigo": "3007872",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3007331"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Fundamentos de sistemas de informacion e inteligencia de negocios",
+        "codigo": "3008883",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3010435"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "QUIMICA GENERAL",
+        "codigo": "3006829",
+        "tipologia": "fundamentacion_optativa",
+        "semestre": null,
+        "prerrequisitos": null,
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "BIOLOGIA GENERAL",
+        "codigo": "1000009-M",
+        "tipologia": "fundamentacion_optativa",
+        "semestre": null,
+        "prerrequisitos": null,
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 4,
+        "nombre": "FISICA DE ELECTRICIDAD Y MAGNETISMO",
+        "codigo": "1000017-M",
+        "tipologia": "fundamentacion_optativa",
+        "semestre": null,
+        "prerrequisitos": ["1000019-M"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 4,
+        "nombre": "Geometria Aplicada",
+        "codigo": "3010391",
+        "tipologia": "fundamentacion_optativa",
+        "semestre": null,
+        "prerrequisitos": ["1000003-M"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 2,
+        "nombre": "LABORATORIO DE QUIMICA GENERAL",
+        "codigo": "3006825",
+        "tipologia": "fundamentacion_optativa",
+        "semestre": null,
+        "prerrequisitos": null,
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 4,
+        "nombre": "FISICA DE OSCILACIONES, ONDAS Y OPTICA",
+        "codigo": "1000020-M",
+        "tipologia": "fundamentacion_optativa",
+        "semestre": null,
+        "prerrequisitos": ["1000007-M"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 4,
+        "nombre": "INTRODUCCION AL MANEJO DE DATOS ESTADISTICOS",
+        "codigo": "3006931",
+        "tipologia": "fundamentacion_optativa",
+        "semestre": null,
+        "prerrequisitos": null,
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 4,
+        "nombre": "MATEMATICAS ESPECIALES",
+        "codigo": "3006905",
+        "tipologia": "fundamentacion_optativa",
+        "semestre": null,
+        "prerrequisitos": ["1000007-M"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Analisis y Diseno de Algoritmos",
+        "codigo": "3009430",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3007741"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "BASE DE DATOS II",
+        "codigo": "3007848",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3007847"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Desarrollo web",
+        "codigo": "3011019",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3007847", "3007865"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Redes Neuronales Artificiales y Algoritmos Bio-Inspirados",
+        "codigo": "3009150",
+        "tipologia": "disciplinar_optativa",
+        "semestre": null,
+        "prerrequisitos": ["3010476"],
+        "estado": null
+      },
+      {
+        "nota": null,
+        "creditos": 3,
+        "nombre": "Fundamentos de analitica",
+        "codigo": "3011020",
+        "tipologia": "disciplinar_obligatoria",
+        "semestre": null,
+        "prerrequisitos": ["3010651", "3007847"],
+        "estado": null
+      },
+      {
+          "nota": null,
+          "creditos": 3,
+          "nombre": "TECNICAS EN APRENDIZAJE ESTADISTICO",
+          "codigo": "3007854",
+          "tipologia": "disciplinar_optativa",
+          "semestre": null,
+          "prerrequisitos": ["3010476"],
+          "estado": null
+        },
+        {
+          "nota": null,
+          "creditos": 3,
+          "nombre": "Calidad de software",
+          "codigo": "3010440",
+          "tipologia": "disciplinar_obligatoria",
+          "semestre": null,
+          "prerrequisitos": ["3007852"],
+          "estado": null
+        },
+        {
+          "nota": null,
+          "creditos": 3,
+          "nombre": "Estructuracion y evaluacion de proyectos de ingenieria",
+          "codigo": "3010407",
+          "tipologia": "disciplinar_obligatoria",
+          "semestre": null,
+          "prerrequisitos": ["3010408"],
+          "estado": null
+        },
+        {
+          "nota": null,
+          "creditos": 3,
+          "nombre": "REDES Y TELECOMUNICACIONES I",
+          "codigo": "3007865",
+          "tipologia": "disciplinar_obligatoria",
+          "semestre": null,
+          "prerrequisitos": ["3007867"],
+          "estado": null
+        },
+        {
+          "nota": null,
+          "creditos": 3,
+          "nombre": "ESTRUCTURA DE DATOS",
+          "codigo": "3007741",
+          "tipologia": "disciplinar_obligatoria",
+          "semestre": null,
+          "prerrequisitos": ["3007744"],
+          "estado": null
+        },
+        {
+          "nota": null,
+          "creditos": 3,
+          "nombre": "INGENIERIA DE REQUISITOS",
+          "codigo": "3007852",
+          "tipologia": "disciplinar_obligatoria",
+          "semestre": null,
+          "prerrequisitos": ["3007853"],
+          "estado": null
+        },
+        {
+          "nota": null,
+          "creditos": 3,
+          "nombre": "Introduccion a la inteligencia artificial",
+          "codigo": "3010476",
+          "tipologia": "disciplinar_obligatoria",
+          "semestre": null,
+          "prerrequisitos": ["3010651", "3007847"],
+          "estado": null
+        },
+        {
+          "nota": null,
+          "creditos": 3,
+          "nombre": "SISTEMAS OPERATIVOS",
+          "codigo": "3007867",
+          "tipologia": "disciplinar_obligatoria",
+          "semestre": null,
+          "prerrequisitos": ["3010426"],
+          "estado": null
+        },
+        {
+          "nota": null,
+          "creditos": 3,
+          "nombre": "BASE DE DATOS I",
+          "codigo": "3007847",
+          "tipologia": "disciplinar_obligatoria",
+          "semestre": null,
+          "prerrequisitos": ["3007741"],
+          "estado": null
+        },
+        {
+          "nota": null,
+          "creditos": 3,
+          "nombre": "Introduccion al analisis de decisiones",
+          "codigo": "3010415",
+          "tipologia": "disciplinar_obligatoria",
+          "semestre": null,
+          "prerrequisitos": ["3007331"],
+          "estado": null
+        },
+        {
+          "nota": null,
+          "creditos": 3,
+          "nombre": "SIMULACION DE SISTEMAS",
+          "codigo": "3007331",
+          "tipologia": "disciplinar_obligatoria",
+          "semestre": null,
+          "prerrequisitos": ["3007324", "3010651"],
+          "estado": null
+        },
+        {
+          "nota": null,
+          "creditos":3,
+          "nombre":"INGENIERIA DE SOFTWARE",
+          "codigo":"3007853",
+          "tipologia":"disciplinar_obligatoria",
+          "semestre":null,
+          "prerrequisitos":["3007744"],
+          "estado": null
+      },
+  
+        {
+          "nota": null,
+          "creditos":3,
+          "nombre":"INVESTIGACION DE OPERACIONES I",
+          "codigo":"3007324",
+          "tipologia":"disciplinar_obligatoria",
+          "semestre":null,
+          "prerrequisitos":["1000003-M","3010435"],
+          "estado": null
+      },
+  
+        {
+          "nota": null,
+          "creditos":3,
+          "nombre":"Teoria de lenguajes de programacion",
+          "codigo":"3010426",
+          "tipologia":"disciplinar_obligatoria",
+          "semestre": null,
+          "prerrequisitos":["3010435","3006906"],
+          "estado": null
+      },
+  
+        {
+          "nota": null,
+          "creditos":4,
+          "nombre":"Fundamentos de matematicas",
+          "codigo":"3010334",
+          "tipologia": "fundamentacion_optativa",
+          "semestre":null,
+          "prerrequisitos":null,
+          "estado": null
+      },
+      {
+          "nota": null,
+          "creditos":3,
+          "nombre":"Fundamentos de proyectos en ingenieria",
+          "codigo":"3010408",
+          "tipologia":"disciplinar_obligatoria",
+          "semestre":null,
+          "prerrequisitos":null,
+          "estado": null
+      },
+      {
         "nota": 3.3,
         "creditos": 4,
         "nombre": "Estadistica II",

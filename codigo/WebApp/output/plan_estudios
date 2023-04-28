@@ -38,8 +38,11 @@ Facultad de Minas
 2 créditos
 4.3" color="#000000" fillcolor="#fdbe26" group=sem1 penwidth=1]
 		"1000089-M" -> 3009511 [style=invis]
-		"Promedio 1" [label="PAPA 4.4|PAPPI 4.4" fillcolor="#EBEBEB" shape=record]
-		3009511 -> "Promedio 1" [style=invis]
+		relleno_1_0 [group=sem1 style=invis]
+		3009511 -> relleno_1_0 [style=invis]
+		"Promedio 1" [label="PAPA 4.4|PAPPI 4.4|PA 4.4" fillcolor="#EBEBEB" shape=record]
+		relleno_1_0 -> "Promedio 1" [style=invis]
+		relleno_1_0 -> "Promedio 1" [style=invis]
 	}
 	subgraph cluster_2 {
 		graph [margin=25 nodesep=0.02]
@@ -66,8 +69,13 @@ MATEMATICAS DISCRETAS
 4 créditos
 4.6" color="#000000" fillcolor="#b094c4" group=sem2 penwidth=1]
 		"1000019-M" -> 3006906 [style=invis]
-		"Promedio 2" [label="PAPA 4.5|PAPPI 4.6" fillcolor="#EBEBEB" shape=record]
-		3006906 -> "Promedio 2" [style=invis]
+		relleno_2_0 [group=sem2 style=invis]
+		3006906 -> relleno_2_0 [style=invis]
+		relleno_2_1 [group=sem2 style=invis]
+		relleno_2_0 -> relleno_2_1 [style=invis]
+		"Promedio 2" [label="PAPA 4.5|PAPPI 4.6|PA 4.5" fillcolor="#EBEBEB" shape=record]
+		relleno_2_1 -> "Promedio 2" [style=invis]
+		relleno_2_1 -> "Promedio 2" [style=invis]
 	}
 	subgraph cluster_3 {
 		graph [margin=25 nodesep=0.02]
@@ -102,8 +110,11 @@ programacion
 3 créditos
 5" color="#000000" fillcolor="#12a79d" group=sem3 penwidth=1]
 		3010408 -> 3010435 [style=invis]
-		"Promedio 3" [label="PAPA 4.5|PAPPI 4.5" fillcolor="#EBEBEB" shape=record]
-		3010435 -> "Promedio 3" [style=invis]
+		relleno_3_0 [group=sem3 style=invis]
+		3010435 -> relleno_3_0 [style=invis]
+		"Promedio 3" [label="PAPA 4.5|PAPPI 4.5|PA 4.5" fillcolor="#EBEBEB" shape=record]
+		relleno_3_0 -> "Promedio 3" [style=invis]
+		relleno_3_0 -> "Promedio 3" [style=invis]
 	}
 	subgraph cluster_4 {
 		graph [margin=25 nodesep=0.02]
@@ -138,8 +149,11 @@ programacion
 3 créditos
 4.6" color="#000000" fillcolor="#12a79d" group=sem4 penwidth=1]
 		3007853 -> 3010426 [style=invis]
-		"Promedio 4" [label="PAPA 4.6|PAPPI 4.8" fillcolor="#EBEBEB" shape=record]
-		3010426 -> "Promedio 4" [style=invis]
+		relleno_4_0 [group=sem4 style=invis]
+		3010426 -> relleno_4_0 [style=invis]
+		"Promedio 4" [label="PAPA 4.6|PAPPI 4.8|PA 4.6" fillcolor="#EBEBEB" shape=record]
+		relleno_4_0 -> "Promedio 4" [style=invis]
+		relleno_4_0 -> "Promedio 4" [style=invis]
 	}
 	subgraph cluster_5 {
 		graph [margin=25 nodesep=0.02]
@@ -180,7 +194,8 @@ matematicas discretas
 4 créditos
 4.6" color="#000000" fillcolor="#fdbe26" group=sem5 penwidth=1]
 		3007863 -> 3010390 [style=invis]
-		"Promedio 5" [label="PAPA 4.6|PAPPI 4.7" fillcolor="#EBEBEB" shape=record]
+		"Promedio 5" [label="PAPA 4.6|PAPPI 4.7|PA 4.6" fillcolor="#EBEBEB" shape=record]
+		3010390 -> "Promedio 5" [style=invis]
 		3010390 -> "Promedio 5" [style=invis]
 	}
 	subgraph cluster_6 {
@@ -214,8 +229,11 @@ Fundamentos de analisis
 4 créditos
 4.3" color="#000000" fillcolor="#fdbe26" group=sem6 penwidth=1]
 		3010476 -> 3010389 [style=invis]
-		"Promedio 6" [label="PAPA 4.6|PAPPI 4.5" fillcolor="#EBEBEB" shape=record]
-		3010389 -> "Promedio 6" [style=invis]
+		relleno_6_0 [group=sem6 style=invis]
+		3010389 -> relleno_6_0 [style=invis]
+		"Promedio 6" [label="PAPA 4.6|PAPPI 4.5|PA 4.6" fillcolor="#EBEBEB" shape=record]
+		relleno_6_0 -> "Promedio 6" [style=invis]
+		relleno_6_0 -> "Promedio 6" [style=invis]
 	}
 	subgraph cluster_7 {
 		graph [margin=25 nodesep=0.02]
@@ -252,8 +270,11 @@ de la computacion
 4 créditos
 4.1" color="#000000" fillcolor="#fdbe26" group=sem7 penwidth=1]
 		3007854 -> 3010393 [style=invis]
-		"Promedio 7" [label="PAPA 4.6|PAPPI 4.4" fillcolor="#EBEBEB" shape=record]
-		3010393 -> "Promedio 7" [style=invis]
+		relleno_7_0 [group=sem7 style=invis]
+		3010393 -> relleno_7_0 [style=invis]
+		"Promedio 7" [label="PAPA 4.6|PAPPI 4.4|PA 4.6" fillcolor="#EBEBEB" shape=record]
+		relleno_7_0 -> "Promedio 7" [style=invis]
+		relleno_7_0 -> "Promedio 7" [style=invis]
 	}
 	subgraph cluster_8 {
 		graph [margin=25 nodesep=0.02]
@@ -294,6 +315,8 @@ probabilidad
 4 créditos
 INSCRITA" color="#000000" fillcolor="#fdbe26" group=sem8 penwidth=1]
 		3011019 -> 3010394 [style=invis]
+		"Promedio 8" [label="Semestre en curso" fillcolor="#EBEBEB" shape=record]
+		3010394 -> "Promedio 8" [style=invis]
 	}
 	"1000008-M" -> "1000003-M" [constraint=false]
 	"1000004-M" -> "1000005-M" [constraint=false]

@@ -3,25 +3,28 @@
 <html>
   <head>
     {% block title %}
-    Web App Flask
+    Unigraph
     {% endblock %}
   </head>
   <body>
     {% block content %}
-    <h1 class="text-center">Generar PDFs</h1>
+    <h1 class="text-center">Generar Plan de Estudios</h1>
     <div class="form-floating">
         <form method="POST">
         <textarea class="form-control" placeholder="Inserta el json" id="json_input" rows="10"></textarea>
         <br>
-        <button type="submit" class="btn btn-primary">Generar PDFs</button>
+        <button type="submit" class="btn btn-primary">Generar Plan</button>
         </form>
     </div>
-    <div id="output_div" style="display:none">
-        <h1>Grafo</h1>
-        <iframe  id="pdf-viewer1" width="100%" height="1000"></iframe>
+    <div id="output_div" style="display:none" class="text-center">
+        <h1>Visualizar Plan de Estudios</h1>
+        <iframe  id="pdf-viewer1" width="100%" height="950"></iframe>
+        <img src="{{url_for('static', filename='convenciones.png')}}" 
+            alt="Convenciones del grafo de asignaturas"
+            width="50%">
 
-        <h1>Pendientes</h1>
-        <iframe  id="pdf-viewer2" width="100%" height="650"></iframe>
+        <h1>Asignaturas Pendientes</h1>
+        <iframe  id="pdf-viewer2" width="100%" height="1000"></iframe>
     </div>
     {% endblock %}
     {% block scripts %}

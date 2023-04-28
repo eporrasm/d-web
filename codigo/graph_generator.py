@@ -47,7 +47,9 @@ plan_estudios = Digraph(name='plan_estudios',
 
 max_sem = 0
 en_curso = False
+max_asignaturas_por_semestre = 0
 dict_materias_cursadas = dict()
+num_asignaturas_por_semestre = dict()
 
 cont_creditos_opt_fund = 0
 cont_creditos_opt_disc = 0
@@ -74,13 +76,23 @@ for asignatura in asignaturas:
     if asignatura['tipologia'] == 'fundamentacion_optativa' and asignatura['estado'] == 'aprobada':
         cont_creditos_opt_fund += int(asignatura['creditos'])
     
+    if asignatura['semestre']:
+        if asignatura['semestre'] not in num_asignaturas_por_semestre:
+            num_asignaturas_por_semestre[asignatura['semestre']] = 1
+        else:
+            num_asignaturas_por_semestre[asignatura['semestre']] += 1
+    
+    
+max_asignaturas_por_semestre = max(num_asignaturas_por_semestre.values())
 
 
 #Se crea una lista para llevar control del PAPA. El primer valor
 #guardará el peso de la nota y la segunda los créditos
 PAPA = [0,0]
+hablalomiPA = dict()
 # Agregamos un nodo por cada asignatura
 for i in range(1,max_sem+1):
+    contador_asignaturas_creadas_por_semestre = 0
 
     with plan_estudios.subgraph(name=f'cluster_{i}',
                                 graph_attr={'margin':'25','nodesep':'0.02'}) as sem:
@@ -169,13 +181,43 @@ for i in range(1,max_sem+1):
                         group=f'sem{i}',
                         penwidth=penwidth
                         )
-            
+                
+                contador_asignaturas_creadas_por_semestre +=1
+
                 #Edges invisibles para las materias queden unas debajo de otras
                 sem.edge(tail_name=asignatura_prev, 
                         head_name=identificador, 
                         style='invis')
-            
+                
+                #Se asigna la asignatura previa.
                 asignatura_prev = identificador
+
+                #Si contador por semestre es llega al numero de asignaturas por semestre y
+                #si el numero de asignaturas por semestre es menor que el max de asignaturas en
+                #cualquier semestre.
+                if contador_asignaturas_creadas_por_semestre == num_asignaturas_por_semestre[i] \
+                and num_asignaturas_por_semestre[i] < max_asignaturas_por_semestre:
+                    
+                    #Diferencia entre asignaturas semestre actual y max asignaturas en algun semestre. 
+                    nodos_faltantes = max_asignaturas_por_semestre - num_asignaturas_por_semestre[i]
+                    
+                    for k in range(nodos_faltantes):
+                        identificador = f'relleno_{i}_{k}'
+
+                        #Nodos relleno invisibles
+                        sem.node(name=identificador,
+                                 group=f'sem{i}',
+                                 style='invis'
+                                )
+                        
+                        #flechas relleno invisibles
+                        sem.edge(tail_name=asignatura_prev, 
+                                 head_name=identificador,
+                                 style='invis'
+                                )
+                        
+                        #Se vuelve a asignar la asignatura previa.
+                        asignatura_prev = identificador
         
         
 
@@ -195,12 +237,22 @@ for i in range(1,max_sem+1):
                     PAPPI[1] += asignatura["creditos"]
                     PAPA[0] += asignatura["nota"] * asignatura["creditos"]
                     PAPA[1] += asignatura["creditos"]
+                    hablalomiPA[asignatura['codigo']] = (asignatura["nota"], asignatura['creditos'])
+
+                        
 
         if ((not en_curso) or (max_sem != i)):
-            PA = 5
+            credPA = 0
+            notPA = 0
+            for llave in hablalomiPA.keys():
+                notPA += hablalomiPA[llave][0]*hablalomiPA[llave][1]
+                credPA += hablalomiPA[llave][1]
+            PA = None
+            if credPA!=0:
+                PA = round(notPA / credPA,1)
             PAPA_semestre = round(PAPA[0]/PAPA[1],1)
-            PAPPI = round(PAPPI[0]/PAPPI[1],1)  # |PA {PA}|
-            node_label=f"PAPA {PAPA_semestre}|PAPPI {PAPPI}"
+            PAPPI = round(PAPPI[0]/PAPPI[1],1)  
+            node_label=f"PAPA {PAPA_semestre}|PAPPI {PAPPI}|PA {PA}"
                 
             sem.node(name=f'Promedio {i}',
                      shape='record',
@@ -209,6 +261,17 @@ for i in range(1,max_sem+1):
                     )
 
             sem.edge(asignatura_prev, f'Promedio {i}', style='invis')
+        
+        else:
+            node_label=f"Semestre en curso"
+            sem.node(name=f'Promedio {i}',
+                     shape='record',
+                     label=node_label, 
+                     fillcolor='#EBEBEB'
+                    )
+
+            sem.edge(asignatura_prev, f'Promedio {i}', style='invis')
+
 
         
 # Agregamos las flechas de prerequisitos
@@ -246,7 +309,7 @@ asignaturas_cursables = Digraph(name='asignaturas_cursables',
                                 comment='asignaturas cursables',
                                 filename='asignaturas_cursables.gv',
                                 format='png',
-                                graph_attr={'compound':'true'}
+                                graph_attr={'compound':'true',"rank":"same", "rankdir":"LR"},
                                 )
 
 
@@ -254,15 +317,19 @@ lista_codigos_por_cursar = list()
 with asignaturas_cursables.subgraph(name=f'cluster_cursables',
                                     graph_attr={'margin':'25','nodesep':'0.02'}) as cluster_cursables:
     
-    cluster_cursables.attr(fontname="Arial",
-            style='filled',
-            fillcolor='lightGray',
-            color='darkgray',
+    cluster_cursables.attr(label='Asignaturas cursables el próximo semestre',
+                           fontname="Arial",
+                           style='filled',
+                           fillcolor='lightGray',
+                           color='darkgray',
         )
     
     cluster_cursables.node_attr['style'] = 'rounded,filled'
     cluster_cursables.node_attr['shape'] = 'box'
     cluster_cursables.node_attr['width'] = '3'
+
+    nostradamus = 0
+    cont = 0
 
     for asignatura in asignaturas:
 
@@ -300,12 +367,30 @@ with asignaturas_cursables.subgraph(name=f'cluster_cursables',
                                                         asignatura['creditos']
                                                        )
 
+            
+
             cluster_cursables.node(name=asignatura['codigo'],
                                    label=node_label,
                                    color='#000000', 
+                                   group=f'CHIMBOBILOA{nostradamus}',
                                    fillcolor=colores_por_tipologia[asignatura["tipologia"]],
                                    penwidth='1'
                                   )
+            
+           
+            if cont != 0:
+                cluster_cursables.edge(asignatura_anteriora, asignatura['codigo'], style='invis' )
+
+            cont += 1
+            if cont == 5:
+                nostradamus += 1
+                cont = 0
+            
+            asignatura_anteriora = asignatura['codigo']
+
+
+
+
 
 # Render the graph to a file
 asignaturas_cursables.render(directory='codigo/asignatura_catalog', view=True)
