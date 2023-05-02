@@ -1,6 +1,3 @@
-
-
-
 const pdfViewer1 = document.getElementById('pdf-viewer1');
 const pdfViewer2 = document.getElementById('pdf-viewer2');
 const outputDiv = document.getElementById('output_div');
@@ -10,7 +7,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
     event.preventDefault(); // Evita que se envíe el formulario
     const jsonInput = document.querySelector('#json_input').value; // Obtiene el valor del textarea
     const evalJson = validarJson(jsonInput);
-    if (evalJson === "paila mi parapapa"){
+    if (evalJson === "despaila mi parapapa"){
     const url = window.location.href+"api";
     (async () => {
       const rawResponse = await fetch(url, {
@@ -25,9 +22,6 @@ document.querySelector('form').addEventListener('submit', (event) => {
     
       console.log(content);
     })();
-
-      // pdfViewer1.src = "../output1#view=Fit&statusbar=0&messages=0&navpanes=0&scrollbar=0";
-      // pdfViewer2.src = "../output2#view=Fit&statusbar=0&messages=0&navpanes=0&scrollbar=0";
 
       if (pdfViewer1.src === "" && pdfViewer2.src === ""){
         pdfViewer1.src = "../output1";
@@ -64,7 +58,9 @@ function validarJson(json) {
       if (obj.creditos_opt_disc !== null && !(typeof obj.creditos_opt_disc === 'number')){
         return `creditos_opt_disc debe ser un número`
       }
-
+      let setAsignaturas = new Set();
+      let asignaturasInscritas = new Set();
+      let maxSemestre = 0
       for (let i = 0; i < obj.asignaturas.length; i++) {
           const asignatura = obj.asignaturas[i];
           if (!asignatura.nombre || !asignatura.codigo || !asignatura.tipologia) {
@@ -103,31 +99,32 @@ function validarJson(json) {
           if (asignatura.estado === "cancelada" && asignatura.nota !== null) {
             return `${asignatura.nombre} tiene estado cancelada, luego su nota debe ser null`
           }
+        //para chequear semestre maximo y asignaturas
+        if (asignatura.semestre > maxSemestre) maxSemestre = asignatura.semestre;
+        if (asignatura.estado === 'inscrita') asignaturasInscritas.add(asignatura.semestre);
+        //METER EN SET  
+        setAsignaturas.add(asignatura.codigo);
       }
-      return "paila mi parapapa";
+      let semIns = Array.from(asignaturasInscritas)[0];
+      //CHEQUAEAR QUE LA ASIGNATURA INSCRITA SEA UN UNICO SEMESTRE Y QUE SEA EL ULTIMO
+      if (asignaturasInscritas.size != 0){
+        if (!(asignaturasInscritas.size === 1 && semIns == maxSemestre)){
+          return 'hay un error mi parapa añañay. Todas las asignaturas inscritas deben estar en el mismo semestre y este semestre debe ser el último, es decir, el mayor'
+      }}
+      //FOR CHECKEANDO QUE LOS PRERRQUISITOS ESTÉN EN EL SET, SI ALGUNA NO ESTÁ, RETURN MENSAJE BRAVO
+      for (let i = 0; i < obj.asignaturas.length; i++) {
+        const asignatura = obj.asignaturas[i];
+        if (asignatura.prerrequisitos != null){
+          for (let j = 0; j < asignatura.prerrequisitos.length; j++){
+            const prerrequisito = asignatura.prerrequisitos[j];
+            if (!setAsignaturas.has(prerrequisito)){
+              return `El prerrequisito de código ${prerrequisito} no se encuentra en las materias`
+            }
+          }
+        }
+      }
+      return "despaila mi parapapa";
   } catch (e) {
       return "Debes ingresar un JSON válido";
   }
 }
-
-function validarNota(nota) {
-  if (nota === null) {
-    return true;
-  }
-  return typeof nota === 'number' && nota >= 0 && nota <= 5;
-}
-
-function validarSemestre(semestre, nota, estado) {
-  if (semestre === null) {
-    return nota === null && estado === null;
-  }
-  return true;
-}
-
-function validarEstado(estado, nota) {
-  if (estado === 'cancelada') {
-    return nota === null;
-  }
-  return estado !== null;
-}
-
