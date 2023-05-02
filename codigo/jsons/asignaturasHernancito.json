@@ -1,0 +1,544 @@
+{
+    "asignaturas":[
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Tierra, Territorio y Ecosistemas de las Comunidades Rurales",
+            "codigo": "1",
+            "tipologia": "libre_eleccion",
+            "semestre": 1,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Lo Rural, las Ruralidades y las Poblaciones Rurales",
+            "codigo": "2",
+            "tipologia": "libre_eleccion",
+            "semestre": 1,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "El Buen Vivir: Vivir Bien en el Territorio y la Comunidad",
+            "codigo": "3",
+            "tipologia": "libre_eleccion",
+            "semestre": 1,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Pedagogías desde la Diversidad Cultural",
+            "codigo": "4",
+            "tipologia": "libre_eleccion",
+            "semestre": 1,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Cartografía Social y Territorial",
+            "codigo": "5",
+            "tipologia": "libre_eleccion",
+            "semestre": 1,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 2,
+            "nombre": "Lectura, Escritura y Oralidad: prácticas culturales I",
+            "codigo": "6",
+            "tipologia": "libre_eleccion",
+            "semestre": 1,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Características y Condiciones Agroambientales del territorio",
+            "codigo": "7",
+            "tipologia": "libre_eleccion",
+            "semestre": 2,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Campesinas y Campesinos como Sujetos de Derechos",
+            "codigo": "8",
+            "tipologia": "libre_eleccion",
+            "semestre": 2,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Trayectorias de vida y relaciones intrafamiliares e intergeneracionales",
+            "codigo": "9",
+            "tipologia": "libre_eleccion",
+            "semestre": 2,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Pedagogías Críticas, Creativas y Decoloniales",
+            "codigo": "10",
+            "tipologia": "libre_eleccion",
+            "semestre": 2,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Espiritualidad, Saberes y Prácticas Culturales en el Territorio",
+            "codigo": "11",
+            "tipologia": "libre_eleccion",
+            "semestre": 2,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 2,
+            "nombre": "Lectura, Escritura y Oralidad: prácticas culturales II",
+            "codigo": "12",
+            "tipologia": "libre_eleccion",
+            "semestre": 2,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Geopolítica, Extractivismo y Conflictos Territoriales",
+            "codigo": "13",
+            "tipologia": "libre_eleccion",
+            "semestre": 3,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Liderazgo y Participación para la Gobernanza Territorial",
+            "codigo": "14",
+            "tipologia": "libre_eleccion",
+            "semestre": 3,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Soberanía Alimentaria y Agroecología",
+            "codigo": "15",
+            "tipologia": "libre_eleccion",
+            "semestre": 3,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Educación y Género en la Ruralidad",
+            "codigo": "16",
+            "tipologia": "libre_eleccion",
+            "semestre": 3,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Ética en el trabajo con la comunidad",
+            "codigo": "17",
+            "tipologia": "libre_eleccion",
+            "semestre": 3,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 2,
+            "nombre": "Periodismo y Radio Comunitaria",
+            "codigo": "18",
+            "tipologia": "libre_eleccion",
+            "semestre": 3,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Sistemas de Información sobre la Ruralidad",
+            "codigo": "19",
+            "tipologia": "libre_eleccion",
+            "semestre": 4,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Ordenamiento Territorial y Sistemas de Planeación",
+            "codigo": "20",
+            "tipologia": "libre_eleccion",
+            "semestre": 4,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Salud Mental Comunitaria y Prácticas de Cuidado en la Ruralidad",
+            "codigo": "21",
+            "tipologia": "libre_eleccion",
+            "semestre": 4,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Metodologías para el trabajo educativo en la ruralidad",
+            "codigo": "22",
+            "tipologia": "libre_eleccion",
+            "semestre": 4,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 4,
+            "nombre": "Práctica Pedagógica I: Investigación Acción Participativa",
+            "codigo": "23",
+            "tipologia": "fundamentacion_optativa",
+            "semestre": 4,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 2,
+            "nombre": "Programas educativos a través de medios digitales",
+            "codigo": "24",
+            "tipologia": "libre_eleccion",
+            "semestre": 4,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Gestión y Manejo de Sistemas Productivos y Ambientales en la Ruralidad",
+            "codigo": "25",
+            "tipologia": "libre_eleccion",
+            "semestre": 5,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Reforma Rural Integral y Construcción de Paz Territorial",
+            "codigo": "26",
+            "tipologia": "libre_eleccion",
+            "semestre": 5,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Políticas Públicas y Salud Comunitaria en la Ruralidad",
+            "codigo": "27",
+            "tipologia": "libre_eleccion",
+            "semestre": 5,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Pedagogías Para la Paz Territorial",
+            "codigo": "28",
+            "tipologia": "libre_eleccion",
+            "semestre": 5,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 4,
+            "nombre": "Práctica Pedagógica II: Planes de Vida Comunitarios",
+            "codigo": "29",
+            "tipologia": "fundamentacion_optativa",
+            "semestre": 5,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 2,
+            "nombre": "Comunicación en Segunda Lengua I",
+            "codigo": "30",
+            "tipologia": "nivelacion",
+            "semestre": 5,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Economía Social y Solidaria, de Autoconsumo y Familiar",
+            "codigo": "31",
+            "tipologia": "libre_eleccion",
+            "semestre": 6,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Formas organizativas y asuntos jurídicos para la gobernanza de las comunidades rurales",    
+            "codigo": "32",
+            "tipologia": "libre_eleccion",
+            "semestre": 6,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Educación para la Salud Rural Colectiva y Ambiental",
+            "codigo": "33",
+            "tipologia": "libre_eleccion",
+            "semestre": 6,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Educación, inclusión y discapacidad en la ruralidad",
+            "codigo": "34",
+            "tipologia": "libre_eleccion",
+            "semestre": 6,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 4,
+            "nombre": "Práctica Pedagógica III: Procesos de Innovación y Creación en la Ruralidad",
+            "codigo": "35",
+            "tipologia": "fundamentacion_optativa",
+            "semestre": 6,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 2,
+            "nombre": "Comunicación en Segunda Lengua II",
+            "codigo": "36",
+            "tipologia": "nivelacion",
+            "semestre": 6,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Seminario de Profundización I",
+            "codigo": "37",
+            "tipologia": "disciplinar_optativa",
+            "semestre": 7,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Electiva de Profundización I",
+            "codigo": "38",
+            "tipologia": "disciplinar_optativa",
+            "semestre": 7,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 6,
+            "nombre": "Práctica Pedagógica IV: Propuesta Creativa Comunitaria I",
+            "codigo": "39",
+            "tipologia": "fundamentacion_optativa",
+            "semestre": 7,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 2,
+            "nombre": "Formación Ciudadana y Constitucional",
+            "codigo": "40",
+            "tipologia": "libre_eleccion",
+            "semestre": 7,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 2,
+            "nombre": "Comunicación en Segunda Lengua III",
+            "codigo": "41",
+            "tipologia": "nivelacion",
+            "semestre": 7,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Seminario de Profundización II",
+            "codigo": "42",
+            "tipologia": "disciplinar_optativa",
+            "semestre": 8,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Electiva de Profundización II",
+            "codigo": "43",
+            "tipologia": "disciplinar_optativa",
+            "semestre": 8,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 6,
+            "nombre": "Práctica Pedagógica V: Propuesta Creativa Comunitaria II",
+            "codigo": "44",
+            "tipologia": "fundamentacion_optativa",
+            "semestre": 8,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 2,
+            "nombre": "Comunicación en Segunda Lengua IV",
+            "codigo": "45",
+            "tipologia": "nivelacion",
+            "semestre": 8,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Seminario de Profundización III",
+            "codigo": "46",
+            "tipologia": "disciplinar_optativa",
+            "semestre": 9,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 3,
+            "nombre": "Electiva de Profundización III",
+            "codigo": "47",
+            "tipologia": "disciplinar_optativa",
+            "semestre": 9,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 6,
+            "nombre": "Práctica Pedagógica VI: Propuesta Creativa Comunitaria III-Trabajo de Grado",
+            "codigo": "48",
+            "tipologia": "fundamentacion_optativa",
+            "semestre": 9,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        },
+    
+        {
+            "nota": 5.0,
+            "creditos": 2,
+            "nombre": "Comunicación en Segunda Lengua V",
+            "codigo": "49",
+            "tipologia": "nivelacion",
+            "semestre": 9,
+            "prerrequisitos": null,
+            "estado": "aprobada"
+        }
+    ],
+    "creditos_opt_fund" : 0,
+    "creditos_opt_disc" : 0
+  }
