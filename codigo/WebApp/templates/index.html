@@ -11,7 +11,73 @@
     <h1 class="text-center">Generar Plan de Estudios</h1>
     <div class="form-floating">
         <form method="POST">
-        <textarea class="form-control" placeholder="Inserta el json" id="json_input" rows="10"></textarea>
+        <textarea class="form-control" id="json_input" rows="10"> {
+          "asignaturas":[
+          {
+            "nota": 3.5,
+            "creditos":4,
+            "nombre":"GEOMETRIA VECTORIAL Y ANALITICA",
+            "codigo":"1000008-M",
+            "tipologia":"fundamentacion_obligatoria",
+            "semestre":2,
+            "prerrequisitos":null,
+            "estado":"aprobada"
+        },
+          {
+              "nota": 4.6,
+              "creditos":2,
+              "nombre":"Introduccion a la ingenieria de sistemas e informatica",
+              "codigo":"3010438",
+              "tipologia":"disciplinar_obligatoria",
+              "semestre":1,
+              "prerrequisitos":null,
+              "estado":"aprobada"
+          },
+          {
+            "nota": 4.2,
+            "creditos":2,
+            "nombre":"Catedra Ingenierias Facultad de Minas",
+            "codigo":"3009511",
+            "tipologia":"libre_eleccion",
+            "semestre":1,
+            "prerrequisitos":null,
+            "estado":"aprobada"
+        },
+        {
+          "nota": null,
+          "creditos":4,
+          "nombre":"ALGEBRA LINEAL",
+          "codigo":"1000003-M",
+          "tipologia":"fundamentacion_obligatoria",
+          "semestre":null,
+          "prerrequisitos":["1000008-M"],
+          "estado":null
+      },
+      {
+        "nota": null,
+        "creditos":4,
+        "nombre":"FISICA MECANICA",
+        "codigo":"1000019-M",
+        "tipologia":"fundamentacion_obligatoria",
+        "semestre":null,
+        "prerrequisitos":["1000004-M","1000008-M"],
+        "estado":null
+    },
+      {
+        "nota": 4.5,
+        "creditos":4,
+        "nombre":"CALCULO DIFERENCIAL",
+        "codigo":"1000004-M",
+        "tipologia":"fundamentacion_obligatoria",
+        "semestre":1,
+        "prerrequisitos":null,
+        "estado":"aprobada"
+    }
+        ],
+        "creditos_opt_fund" : 16,
+        "creditos_opt_disc" : 22
+      }
+    </textarea>
         <br>
         <button type="submit" class="btn btn-primary">Generar Plan</button>
         </form>
