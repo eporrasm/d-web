@@ -1,0 +1,11 @@
+ssh root@198.199.88.110
+
+cd WebApp
+
+screen -r
+
+[Cntrl + c]
+
+flask run -h 0.0.0.0 -p 80
+
+[Cntrl + a] y luego [d]
