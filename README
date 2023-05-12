@@ -1,1 +1,31 @@
+# Proyecto Desarrollo Web
+## Visualizador de plan de estudios
+
 Documentación y código de la solución mínima viable, y arquitectura de la información.
+
+## Participantes
+ - Emilio Porras
+ - Esteban García
+ - Felipe Miranda
+ - Juan José Correa
+
+Los entregables de el proyecto (arquitectura de la información y solución mínima viable) se encuentran en sus respectivas carpetas.
+
+En la carpeta codigo se encuentra todo lo referente al codigo y archivos output testeados del proyecto. 
+
+## Aplicación Web
+Dentro de la carpeta codigo se puede encontrar la carpeta WebApp, la cuál contiene todo lo referente y utilizado para la aplicación web. (main.js, app.py, static, etc.)
+<br></br>
+
+### Estructuración de la aplicación
+Como se trabajó con Flask para la creación de la aplicación, se utilizó la estructuración predeterminada de tales aplicaciones, utilizando las carpetas Templates y Static.
+<br></br>
+
+#### Distribución
+La implementación de la aplicación se encuentra en app.py, en graph_generator_app.py se encuentra toda la generación completa de los PDFs creados con los datos ingresados en la aplicación web, envuelta en una sola función llamada generate_graph_pdf utilizada en app.py.
+
+La carpeta output sirve como holder de los archivos PDF temporales generados por la aplicación para luego ser visualizados.
+<br></br>
+
+#### Dependencias
+El correcto funcionamiento de la aplicación depende del software de terceros Graphviz, el cual se utiliza por medio del modulo del mismo nombre de python.
